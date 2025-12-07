@@ -7,11 +7,9 @@
 
 | Versión | Fecha | Autor | Descripción |
 |---------|-------|-------|-------------|
-| 1.0 | 27 Oct 2024 | Equipo UniGO | Implementación inicial con FastAPI/Python |
-| 1.1 | 04 Nov 2024 | Equipo UniGO | Visualización gráfica PostgreSQL |
-| 1.2 | 02 Dic 2024 | Equipo UniGO | Sistema de pagos funcional con Stripe |
-| 1.3 | 03 Dic 2024 | Equipo UniGO | Refinamiento de pagos con conductor3 |
-| 2.0 | 04 Dic 2025 | Equipo UniGO | Migración a Node.js/Express + WebSockets |
+| 1.0 | 27 Oct 2024 | Equipo UniGO | Implementación inicial |
+| 2.0 | 04 Dic 2024 | Equipo UniGO | Backend Node.js + Express |
+| 3.0 | 07 Dic 2024 | Equipo UniGO | WebSocket chat grupal + Stripe Connect + Sistema de reembolsos |
 
 ---
 
@@ -31,41 +29,44 @@
 ### 1.3 Alcance
 
 La aplicación permite:
-- Registro y autenticación con email institucional
-- Creación y búsqueda de viajes
-- Sistema de reservas con confirmación
-- Chat en tiempo real entre conductor y pasajeros
-- Pagos seguros mediante Stripe
-- Sistema de valoraciones
-- Notificaciones por email e in-app
+- Registro y autenticación con email institucional (.ugr.es, .us.es, etc.)
+- Creación y búsqueda de viajes con Google Maps
+- Sistema de reservas con aceptación/rechazo
+- Chat grupal en tiempo real (WebSocket) por viaje
+- Pagos seguros con Stripe Payment Intents + Connect
+- Transferencias automáticas a conductores (85% del pago)
+- Sistema de cancelaciones con reembolsos
+- Sistema de valoraciones mutuas
 
 ### 1.4 Tecnologías Utilizadas
 
-#### Backend (Migrado a Node.js - v2.0)
-- **Framework**: Express.js (Node.js)
-- **Base de datos**: PostgreSQL 14+
-- **ORM**: Sequelize
+#### Backend
+- **Framework**: Express.js 4.x (Node.js 18+)
+- **Base de datos**: PostgreSQL 15
+- **ORM**: Sequelize 6.x
 - **Autenticación**: JWT (jsonwebtoken)
 - **Validación**: Joi
-- **Email**: Nodemailer
-- **Pagos**: Stripe SDK
-- **WebSockets**: Socket.io
+- **Email**: Nodemailer (SMTP)
+- **Pagos**: Stripe Payment Intents + Connect
+- **WebSockets**: Socket.io (chat grupal)
 - **Observabilidad**: Prometheus + Winston
 
 #### Frontend
 - **Framework**: Next.js 15 (React 19)
-- **Lenguaje**: TypeScript
-- **Estilos**: Tailwind CSS 4
-- **Gestión de estado**: React Hooks
-- **HTTP Client**: Axios
-- **Mapas**: Google Maps API
-- **Pagos**: @stripe/react-stripe-js
+- **Lenguaje**: TypeScript 5
+- **Estilos**: Tailwind CSS
+- **Gestión de estado**: React Hooks + Context API
+- **HTTP Client**: Fetch API nativo
+- **Mapas**: Google Maps React (@react-google-maps/api)
+- **Pagos**: @stripe/react-stripe-js + Elements
+- **WebSocket**: Socket.io-client
 
 #### Infraestructura
 - **Contenedores**: Docker + Docker Compose
-- **Base de datos**: PostgreSQL (contenedor)
+- **Base de datos**: PostgreSQL 15 (contenedor)
 - **Email (dev)**: MailHog
 - **Monitorización**: Prometheus + Grafana
+- **Admin DB**: pgAdmin 4
 
 ---
 
@@ -329,23 +330,20 @@ La aplicación permite:
 - HTTP fallback: `GET/POST /api/chat/trips/:tripId/messages`
 - Frontend: socket.io-client
 
-### RF08 - Notificaciones
+### RF08 - Sistema de Emails
 **Estado**: ✅ **CUMPLIDO**
 
-**Descripción**: Sistema de notificaciones por email e in-app.
+**Descripción**: Emails transaccionales para eventos importantes.
 
 **Criterios de aceptación**:
-- Email de verificación al registrarse
-- Email al recibir nueva solicitud de reserva
-- Email al confirmar reserva
-- Notificaciones in-app en tiempo real
-- Banners de alerta para mensajes no leídos
+- Email de verificación al registrarse (código 6 dígitos)
+- Email al conductor cuando recibe nueva solicitud de reserva
+- Email al pasajero cuando aceptan su reserva
 
 **Implementación**:
-- Backend: Nodemailer para emails
+- Backend: Nodemailer con SMTP (Gmail en desarrollo)
 - Plantillas HTML para emails
-- WebSockets para notificaciones en tiempo real
-- Frontend: Componente de notificaciones
+- Configuración en variables de entorno
 
 ### RF09 - Sistema de Valoraciones
 **Estado**: ✅ **CUMPLIDO**

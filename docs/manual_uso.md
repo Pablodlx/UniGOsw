@@ -270,11 +270,11 @@ Para cada solicitud verás:
 
 **Paso 3**: El sistema:
 - Confirma la reserva
-- Retiene el pago del pasajero (NO se captura aún)
-- Envía notificación al pasajero por email
+- El pago ya está autorizado (creado al hacer la reserva)
 - Descuenta las plazas disponibles
+- Actualiza asientos: X/Y disponibles
 
-✅ **El pasajero recibirá confirmación** y podrás chatear con él.
+✅ **El pasajero aparecerá en tu lista** y podrás chatear con él en el chat grupal del viaje.
 
 #### Rechazar una Solicitud
 
@@ -395,29 +395,31 @@ Los fondos llegarán a tu cuenta Stripe Connect:
 **Paso 4**: Lee las condiciones de cancelación:
 
 **Penalizaciones según tiempo**:
-- ✅ **Más de 24 horas antes**: 0% penalización (reembolso completo)
-- ⚠️ **12-24 horas antes**: 30% penalización
-- ⚠️ **6-12 horas antes**: 50% penalización
-- ❌ **Menos de 6 horas antes**: 100% penalización (sin reembolso)
+- ✅ **24 horas o más antes**: 0% penalización (reembolso 100%)
+- ⚠️ **Menos de 24 horas antes**: 30% penalización (reembolso 70%)
+
+**Nota**: Las tarifas de Stripe se deducen automáticamente del reembolso.
 
 **Paso 5**: Confirma la cancelación
 
-✅ El sistema procesará el reembolso automáticamente.
+✅ El sistema procesará el reembolso automáticamente:
+- Cancela el PaymentIntent en Stripe
+- Libera el asiento para otros pasajeros
+- Notifica al conductor
 
-### 13.2 Cancelar un Viaje (Como Conductor)
+### 13.2 Eliminar un Viaje (Como Conductor)
 
 **Paso 1**: Ve a **"Mis Viajes"**
 
-**Paso 2**: Selecciona el viaje a cancelar
+**Paso 2**: Selecciona el viaje a eliminar
 
-**Paso 3**: Haz clic en **"Cancelar Viaje"**
+**Paso 3**: Haz clic en **"Eliminar Viaje"**
 
-⚠️ **Advertencia**: Cancelar con menos de 24 horas de antelación aplica **50% de penalización** sobre el total.
+⚠️ **Advertencia**: Solo puedes eliminar viajes sin pasajeros aceptados.
 
-**Paso 4**: Confirma la cancelación
+**Paso 4**: Confirma la eliminación
 
-✅ El sistema:
-- Reembolsa a todos los pasajeros
+✅ El viaje desaparecerá de las búsquedas
 - Aplica la penalización si corresponde
 - Notifica a todos los afectados
 
@@ -513,38 +515,41 @@ Tu perfil muestra:
 
 ---
 
-## 16. NOTIFICACIONES
+## 16. CHAT EN TIEMPO REAL
 
-### 16.1 Tipos de Notificaciones
+### 16.1 Acceder al Chat de Viaje
 
-UniGO te notifica sobre:
-- 📧 **Por email**:
-  - Verificación de cuenta
-  - Nueva solicitud de reserva
-  - Confirmación de reserva
-  - Recordatorios de viaje
-  
-- 🔔 **In-app** (en la aplicación):
-  - Mensajes de chat nuevos
-  - Cambios en reservas
-  - Valoraciones recibidas
-  - Alertas del sistema
+El chat grupal está disponible cuando:
+- **Conductores**: Al menos 1 pasajero aceptado en tu viaje
+- **Pasajeros**: Tu reserva ha sido aceptada (estado ACCEPTED)
 
-### 16.2 Gestionar Notificaciones
+**Paso 1**: Ve a **"Mis Viajes"**
 
-**Ver todas las notificaciones**:
+**Paso 2**: Localiza el viaje activo
 
-**Paso 1**: Haz clic en el icono de campana (🔔)
+**Paso 3**: Haz clic en el botón **"💬 Chat"**
 
-[CAPTURA: Panel de notificaciones]
+[CAPTURA: Botón de chat en tarjeta de viaje]
 
-**Paso 2**: Verás una lista de notificaciones recientes
+### 16.2 Enviar Mensajes
 
-**Paso 3**: Haz clic en una notificación para ver detalles
+**Paso 1**: Escribe tu mensaje en el campo de texto
 
-**Marcar como leídas**:
-- Las notificaciones se marcan como leídas automáticamente al hacer clic
-- Puedes hacer clic en **"Marcar todas como leídas"**
+**Paso 2**: Haz clic en **"Enviar"** o presiona Enter
+
+**Paso 3**: El mensaje aparecerá instantáneamente para todos los participantes
+
+[CAPTURA: Interfaz de chat con mensajes]
+
+✅ **Nota**: Los mensajes se envían en tiempo real con WebSocket. Si falla la conexión, se usará HTTP automáticamente.
+
+### 16.3 Participantes del Chat
+
+El chat grupal incluye:
+- 🚗 **Conductor del viaje**
+- 👥 **Todos los pasajeros con estado ACCEPTED**
+
+⚠️ Los pasajeros con reservas PENDING o REJECTED no tienen acceso al chat.
 
 ---
 
@@ -565,12 +570,22 @@ UniGO te notifica sobre:
 
 ✅ Tu contraseña se actualizará y se cerrará la sesión en todos los dispositivos.
 
-### 17.2 Preferencias de Privacidad
+### 17.2 Cuenta Stripe Connect (Conductores)
 
-**Configuraciones disponibles**:
-- 👁️ **Visibilidad del perfil**: Público o Solo pasajeros confirmados
-- 📧 **Notificaciones por email**: Activar/Desactivar
-- 📱 **Mostrar teléfono**: Solo a pasajeros confirmados
+**Para recibir pagos como conductor**:
+
+**Paso 1**: Ve a **"Mi Perfil"**
+
+**Paso 2**: En la sección de pagos, haz clic en **"Configurar Cuenta Stripe"**
+
+**Paso 3**: Completa el formulario de Stripe con:
+- Información personal
+- Datos bancarios (IBAN)
+- Verificación de identidad
+
+**Paso 4**: Stripe verificará tu cuenta (1-2 días)
+
+✅ **Importante**: Debes completar este paso para recibir pagos automáticos al completar viajes.
 
 ---
 

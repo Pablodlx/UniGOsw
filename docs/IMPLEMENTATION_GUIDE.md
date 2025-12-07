@@ -1,24 +1,25 @@
 # UniGO - Guía de Implementación Completa
-## Migración a Node.js y WebSockets - Versión 2.0
+## Backend Node.js + WebSockets + Stripe Connect - Versión 3.0
 
 ---
 
 ## 📋 Resumen Ejecutivo
 
-Este documento describe la **migración completa del backend de UniGO** de FastAPI/Python a Node.js/Express, implementando WebSockets con Socket.io para cumplir al 100% con los requisitos de la asignatura **Sistemas Web I**.
+Este documento describe la **implementación completa del backend de UniGO** con Node.js/Express, WebSockets con Socket.io para chat grupal en tiempo real, y Stripe Connect para pagos automáticos a conductores. Cumple al 100% con los requisitos de **Sistemas Web I**.
 
-### Cambios Principales
+### Stack Técnico Actual
 
-| Aspecto | Versión 1.0 (Python) | Versión 2.0 (Node.js) |
-|---------|---------------------|---------------------|
-| **Framework Backend** | FastAPI | Express.js |
-| **Runtime** | Python 3.12+ | Node.js 18+ |
-| **ORM** | SQLAlchemy | Sequelize |
-| **Validación** | Pydantic | Joi |
-| **Email** | Python SMTP | Nodemailer |
-| **Real-time** | Polling (20s) | WebSockets (Socket.io) |
-| **Autenticación** | JWT (python-jose) | JWT (jsonwebtoken) |
-| **Observabilidad** | Prometheus | Prometheus + Winston |
+| Componente | Tecnología | Descripción |
+|-----------|------------|-------------|
+| **Backend Framework** | Express.js 4.x | API REST + WebSocket |
+| **Runtime** | Node.js 18+ | JavaScript server-side |
+| **ORM** | Sequelize 6.x | PostgreSQL ORM |
+| **Validación** | Joi | Validación de esquemas |
+| **Email** | Nodemailer | Envío de emails |
+| **Real-time** | Socket.io | Chat grupal por viaje |
+| **Autenticación** | JWT (jsonwebtoken) | Tokens seguros |
+| **Pagos** | Stripe Payment + Connect | Pagos automáticos a conductores |
+| **Observabilidad** | Prometheus + Winston | Métricas y logs |
 
 ---
 
@@ -58,21 +59,21 @@ Este documento describe la **migración completa del backend de UniGO** de FastA
 #### 6. Funcionalidad en Tiempo Real ✅
 - **Implementación**: WebSockets con Socket.io
 - **Características**:
-  - Chat instantáneo
-  - Indicador de escritura
-  - Confirmación de lectura
-  - Notificaciones push
-  - Conexión bidireccional
+  - Chat grupal por viaje (conductor + pasajeros ACCEPTED)
+  - Autenticación JWT por WebSocket
+  - HTTP fallback para envío de mensajes
+  - Eventos: authenticate, join_trip, send_trip_message
+  - Conexión bidireccional persistente
 
 #### 7. Manejo de Excepciones ✅
 - **Middleware**: `middleware/errorHandler.js`
 - **Try-catch**: En todas las rutas
-- **Logging**: Winston con niveles
-- **Tipos**: Sequelize, JWT, Stripe, Joi, custom
+- **Logging**: Winston con niveles (info, warn, error)
+- **Tipos de errores**: Sequelize, JWT, Stripe, Joi, custom
 
 #### 8. Notificación de Errores ✅
-- **Backend**: Respuestas JSON con `detail`
-- **Frontend**: Toast notifications
+- **Backend**: Respuestas JSON con campo `detail`
+- **Frontend**: Toast notifications (react-hot-toast)
 - **Validaciones**: Mensajes específicos por campo
 - **HTTP Codes**: Apropiados (400, 401, 403, 404, 500)
 
@@ -94,31 +95,35 @@ Next.js 15 + React 19
 ### Capa de Aplicación (Backend)
 ```
 Node.js 18 + Express.js
-├── server.js (entry point)
+├── server.js (entry point + Socket.io setup)
 ├── routes/ (API endpoints)
-│   ├── auth.js
-│   ├── rides.js
-│   ├── bookings.js
-│   ├── payments.js
-│   └── chat.js
+│   ├── auth.js              # Registro, login, verificación
+│   ├── users.js             # Gestión de usuarios
+│   ├── rides.js             # Crear, buscar, reservar viajes
+│   ├── bookings.js          # Aceptar/rechazar reservas
+│   ├── payments.js          # Stripe webhook, setup intents
+│   ├── trip_chat.js         # Chat grupal HTTP
+│   ├── profile.js           # Perfil de usuario
+│   ├── ratings.js           # Valoraciones
+│   ├── bankAccount.js       # Stripe Connect onboarding
+│   └── alerts.js            # (vacío, legacy)
 ├── models/ (Sequelize)
 │   ├── User.js
 │   ├── Ride.js
 │   ├── Booking.js
 │   ├── Payment.js
-│   └── Message.js
+│   ├── TripGroupMessage.js  # Chat grupal
+│   └── Rating.js
 ├── middleware/
-│   ├── auth.js (JWT verify)
-│   ├── errorHandler.js
-│   └── notFound.js
+│   ├── auth.js              # JWT verify
+│   ├── errorHandler.js      # Error handling global
+│   └── notFound.js          # 404 handler
 ├── utils/
-│   ├── email.js (Nodemailer)
-│   ├── stripe.js (pagos)
-│   ├── validation.js (Joi)
-│   ├── metrics.js (Prometheus)
-│   └── logger.js (Winston)
+│   ├── email.js             # Nodemailer
+│   ├── metrics.js           # Prometheus
+│   └── logger.js            # Winston
 └── websocket/
-    └── index.js (Socket.io handlers)
+    └── index.js             # Socket.io handlers (trip chat)
 ```
 
 ### Capa de Datos
@@ -132,53 +137,92 @@ PostgreSQL 14
 
 ---
 
-## 🔌 WebSockets Implementación
+## 🔌 WebSockets - Chat Grupal Implementación
 
 ### Servidor (Backend)
 
-**Archivo**: `backend-node/src/websocket/index.js`
+**Archivo**: `src/backend/src/websocket/index.js`
 
 ```javascript
-import { Server } from 'socket.io';
+import jwt from 'jsonwebtoken';
+import TripGroupMessage from '../models/TripGroupMessage.js';
+import Booking from '../models/Booking.js';
+import Ride from '../models/Ride.js';
+import User from '../models/User.js';
 
 export const setupWebSocket = (io) => {
   io.on('connection', (socket) => {
-    // Autenticación con JWT
-    socket.on('authenticate', async ({ token }) => {
-      const user = await verifyToken(token);
-      socket.userId = user.id;
-      socket.join(`user:${user.id}`);
-      socket.emit('authenticated', { userId: user.id });
-    });
+    console.log('WebSocket connected:', socket.id);
 
-    // Unirse a chat de viaje
-    socket.on('join_trip', async ({ tripId }) => {
-      // Verificar autorización
-      if (canAccessTrip(socket.userId, tripId)) {
-        socket.join(`trip:${tripId}`);
-        socket.emit('joined_trip', { tripId });
+    // 1. Autenticación con JWT
+    socket.on('authenticate', async ({ token }) => {
+      try {
+        const decoded = jwt.verify(token, process.env.JWT_SECRET);
+        socket.userId = decoded.userId;
+        socket.emit('authenticated', { userId: decoded.userId });
+      } catch (error) {
+        socket.emit('auth_error', { error: 'Invalid token' });
       }
     });
 
-    // Enviar mensaje
-    socket.on('send_message', async ({ tripId, receiverId, message }) => {
-      const msg = await Message.create({
-        trip_id: tripId,
-        sender_id: socket.userId,
-        receiver_id: receiverId,
-        message
-      });
+    // 2. Unirse a chat de viaje (solo conductor o pasajeros ACCEPTED)
+    socket.on('join_trip', async ({ trip_id }) => {
+      if (!socket.userId) {
+        return socket.emit('error', { message: 'Not authenticated' });
+      }
+
+      const ride = await Ride.findByPk(trip_id);
+      if (!ride) {
+        return socket.emit('error', { message: 'Ride not found' });
+      }
+
+      // Verificar si es conductor
+      const isDriver = ride.driver_id === socket.userId;
       
-      // Emitir a todos en el trip
-      io.to(`trip:${tripId}`).emit('new_message', msg);
+      // Verificar si es pasajero ACCEPTED
+      const booking = await Booking.findOne({
+        where: {
+          ride_id: trip_id,
+          passenger_id: socket.userId,
+          status: 'ACCEPTED'
+        }
+      });
+
+      if (!isDriver && !booking) {
+        return socket.emit('error', { message: 'Unauthorized' });
+      }
+
+      socket.join(`trip:${trip_id}`);
+      console.log(`User ${socket.userId} joined trip:${trip_id}`);
     });
 
-    // Indicador de escritura
-    socket.on('typing', ({ tripId, receiverId }) => {
-      io.to(`user:${receiverId}`).emit('user_typing', {
-        tripId,
-        userId: socket.userId
+    // 3. Enviar mensaje grupal
+    socket.on('send_trip_message', async ({ trip_id, message }) => {
+      if (!socket.userId) {
+        return socket.emit('error', { message: 'Not authenticated' });
+      }
+
+      const newMessage = await TripGroupMessage.create({
+        trip_id,
+        user_id: socket.userId,
+        message
       });
+
+      const user = await User.findByPk(socket.userId);
+      
+      // Emitir a todos en el room del viaje
+      io.to(`trip:${trip_id}`).emit('new_trip_message', {
+        id: newMessage.id,
+        trip_id,
+        user_id: socket.userId,
+        user_name: user.full_name || user.email,
+        message,
+        created_at: newMessage.created_at
+      });
+    });
+
+    socket.on('disconnect', () => {
+      console.log('WebSocket disconnected:', socket.id);
     });
   });
 };
@@ -186,18 +230,48 @@ export const setupWebSocket = (io) => {
 
 ### Cliente (Frontend)
 
-**Archivo**: `frontend/src/hooks/useChat.js`
+**Archivo**: `src/frontend/src/hooks/useWebSocket.ts`
 
-```javascript
-import { useEffect, useState } from 'react';
-import { io } from 'socket.io-client';
+```typescript
+import { useEffect, useRef, useState } from 'react';
+import { io, Socket } from 'socket.io-client';
 
-export const useChat = (tripId, token) => {
-  const [socket, setSocket] = useState(null);
-  const [messages, setMessages] = useState([]);
+export const useWebSocket = (token: string | null) => {
+  const [isConnected, setIsConnected] = useState(false);
+  const socketRef = useRef<Socket | null>(null);
 
   useEffect(() => {
-    const newSocket = io('http://localhost:8000', {
+    if (!token) return;
+
+    const socket = io(process.env.NEXT_PUBLIC_WS_URL || 'http://localhost:8000', {
+      transports: ['websocket', 'polling'],
+      reconnection: true,
+      reconnectionDelay: 1000,
+      reconnectionAttempts: 5
+    });
+
+    socket.on('connect', () => {
+      console.log('WebSocket connected');
+      socket.emit('authenticate', { token });
+    });
+
+    socket.on('authenticated', () => {
+      setIsConnected(true);
+    });
+
+    socket.on('disconnect', () => {
+      setIsConnected(false);
+    });
+
+    socketRef.current = socket;
+
+    return () => {
+      socket.disconnect();
+    };
+  }, [token]);
+
+  return { socket: socketRef.current, isConnected };
+};
       transports: ['websocket', 'polling']
     });
 
@@ -233,47 +307,71 @@ export const useChat = (tripId, token) => {
 
 ---
 
-## 💳 Sistema de Pagos Stripe
+## 💳 Sistema de Pagos Stripe + Connect
 
-### Flujo Completo
+### Flujo Completo con Transferencias Automáticas
 
-1. **Guardar Tarjeta (Pasajero)**
+#### 1. Onboarding Conductor (Stripe Connect)
 ```
-POST /api/payments/create-setup-intent
-→ Stripe: SetupIntent
-→ Frontend: Formulario Stripe Elements
-→ POST /api/payments/confirm-setup-intent
-→ DB: Guardar payment_method_id en user
-```
-
-2. **Aceptar Reserva (Conductor)**
-```
-POST /api/bookings/:id/accept
-→ Stripe: PaymentIntent (capture_method: manual)
-→ DB: Booking status = confirmed
-→ DB: Payment status = authorized
-→ Email: Notificar pasajero
-→ WebSocket: Notificación en tiempo real
+POST /api/bank-account/create-connect-account
+→ Stripe: Crear cuenta Connect del conductor
+→ Stripe: Retornar onboarding_url
+→ Frontend: Redirigir a Stripe para completar datos
+→ Conductor: Completa información bancaria
+→ Stripe: Webhook account.updated
+→ DB: Guardar stripe_connect_account_id en user
 ```
 
-3. **Completar Viaje (Conductor)**
+#### 2. Reservar Viaje (Pasajero)
+```
+POST /api/rides/:id/book
+→ Stripe: Crear PaymentIntent con:
+   - capture_method: manual (autorizar primero)
+   - transfer_data.destination: conductor.stripe_connect_account_id
+   - application_fee_percent: 15
+→ DB: INSERT payment (status: authorized)
+→ DB: INSERT booking (status: pending)
+→ Email: Notificar conductor
+```
+
+#### 3. Aceptar Reserva (Conductor)
+```
+POST /api/bookings/:bookingId/accept
+→ DB: UPDATE booking (status: accepted)
+→ Actualizar asientos disponibles
+→ Frontend: Mostrar en lista de pasajeros
+```
+
+#### 4. Completar Viaje (Conductor)
 ```
 POST /api/rides/:id/complete
-→ Stripe: Capture todos los PaymentIntents
-→ Aplicar comisión 15%
-→ DB: Payment status = captured
-→ DB: Ride is_completed = true
+→ Stripe: Capture PaymentIntent
+→ Stripe: Transfiere automáticamente al conductor (85%)
+→ Stripe: Retiene comisión plataforma (15%)
+→ DB: UPDATE payments (status: captured)
+→ DB: UPDATE ride (is_completed: true)
 → Habilitar valoraciones
 ```
 
-4. **Cancelar Reserva (Pasajero)**
+#### 5. Cancelar Reserva con Reembolso (Pasajero)
 ```
-POST /api/bookings/:id/cancel
-→ Calcular penalización según tiempo
-→ Stripe: Refund (parcial o completo)
-→ DB: Booking status = cancelled
+POST /api/rides/cancel-booking
+→ Calcular penalización:
+   - ≥24h antes del viaje: 0% penalización (reembolso 100%)
+   - <24h antes del viaje: 30% penalización (reembolso 70%)
+→ Stripe: Cancelar PaymentIntent (si no capturado)
+   O crear Refund (si ya capturado)
+→ Deducir tarifas de Stripe del reembolso
+→ DB: UPDATE booking (status: cancelled)
 → Email: Notificar conductor
+→ Liberar asiento
 ```
+
+### Ventajas de transfer_data
+- ✅ Transferencia automática al completar viaje
+- ✅ No requiere llamadas adicionales a Stripe
+- ✅ Comisión se aplica automáticamente
+- ✅ Menos errores que con transferencias manuales
 
 ### Penalizaciones
 

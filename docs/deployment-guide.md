@@ -59,7 +59,7 @@
 1. Haz clic en el servicio del backend
 2. Ve a **"Settings"**
 3. Configura:
-   - **Root Directory**: `backend-node`
+   - **Root Directory**: `src/backend`
    - **Start Command**: `npm start`
    - **Build Command**: `npm install`
 4. Ve a **"Variables"** y añade:
@@ -68,30 +68,31 @@
 NODE_ENV=production
 PORT=8000
 DATABASE_URL=${{Postgres.DATABASE_URL}}
-SECRET_KEY=tu-clave-secreta-segura-aqui
 
-# Email (SMTP real)
+# JWT
+JWT_SECRET=tu-jwt-secret-seguro-aqui
+SECRET_KEY=tu-secret-key-seguro-aqui
+
+# Email (SMTP real para producción)
 EMAIL_BACKEND=smtp
 EMAIL_PROVIDER=Gmail
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
-SMTP_USERNAME=tu-email@gmail.com
-SMTP_PASSWORD=tu-app-password
-SMTP_USE_TLS=true
-SMTP_USE_SSL=false
+SMTP_USER=tu-email@gmail.com
+SMTP_PASS=tu-app-password-de-gmail
 EMAIL_FROM_NAME=UniGO
 EMAIL_FROM=tu-email@gmail.com
 
-# Stripe (producción)
+# Stripe (claves de producción)
 STRIPE_SECRET_KEY=sk_live_xxx
-STRIPE_PUBLIC_KEY=pk_live_xxx
 STRIPE_WEBHOOK_SECRET=whsec_xxx
 APP_COMMISSION_PERCENT=15
 
-# CORS (ajusta con tu dominio)
-CORS_ORIGINS=https://tu-dominio.com,https://www.tu-dominio.com
+# CORS (ajusta con tu dominio de frontend)
+ALLOWED_ORIGINS=https://tu-dominio.com,https://www.tu-dominio.com
 
-ALLOWED_EMAIL_DOMAINS=ugr.es,us.es,uma.es,ucm.es,upm.es
+# Dominios de email permitidos
+ALLOWED_EMAIL_DOMAINS=ugr.es,us.es,uma.es,ucm.es,upm.es,uva.es
 ```
 
 5. Guarda y redeploy
@@ -101,14 +102,24 @@ ALLOWED_EMAIL_DOMAINS=ugr.es,us.es,uma.es,ucm.es,upm.es
 1. Haz clic en **"+ New"** → **"Empty Service"**
 2. Conecta el mismo repositorio
 3. Configura:
-   - **Root Directory**: `frontend`
+   - **Root Directory**: `src/frontend`
    - **Build Command**: `npm run build`
    - **Start Command**: `npm start`
 4. Variables de entorno:
 
 ```bash
-VITE_API_BASE=https://tu-backend.railway.app
-NEXT_PUBLIC_STRIPE_PUBLIC_KEY=pk_live_xxx
+# API Backend
+NEXT_PUBLIC_API_BASE=https://tu-backend.railway.app/api
+NEXT_PUBLIC_API_URL=https://tu-backend.railway.app
+
+# WebSocket (mismo dominio que backend)
+NEXT_PUBLIC_WS_URL=https://tu-backend.railway.app
+
+# Google Maps
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=tu-google-maps-api-key
+
+# Stripe (clave pública de producción)
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_live_xxx
 ```
 
 5. Guarda y deploy

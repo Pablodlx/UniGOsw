@@ -61,16 +61,6 @@
         │  EDITAR PERFIL      │
         │  /profile/edit      │
         └─────────────────────┘
-                     │
-        ┌────────────▼────────┐
-        │  CONFIGURACIÓN      │
-        │  /settings          │
-        └─────────────────────┘
-                     │
-        ┌────────────▼────────┐
-        │  NOTIFICACIONES     │
-        │  /notifications     │
-        └─────────────────────┘
 ```
 
 ### 1.2 Rutas de la Aplicación
@@ -83,29 +73,23 @@
 
 #### Rutas Autenticadas
 - `/dashboard` - Panel principal
-- `/rides` - Listado de viajes
-- `/rides/search` - Búsqueda avanzada
-- `/rides/create` - Crear nuevo viaje
+- `/rides` - Búsqueda de viajes
+- `/post-ride` - Crear nuevo viaje
 - `/rides/:id` - Detalle de viaje
-- `/my-rides` - Mis viajes como conductor
-- `/my-bookings` - Mis reservas como pasajero
-- `/bookings/:id` - Detalle de reserva
-- `/chat/:tripId` - Chat del viaje
+- `/my-rides` - Mis viajes como conductor y reservas como pasajero
 - `/profile` - Mi perfil
 - `/profile/edit` - Editar perfil
-- `/requests` - Solicitudes pendientes (conductor)
-- `/notifications` - Centro de notificaciones
-- `/settings` - Configuración de cuenta
 
 #### Rutas de API (Backend)
-- `/api/auth/*` - Autenticación
+- `/api/auth/*` - Autenticación JWT
 - `/api/users/*` - Gestión de usuarios
 - `/api/rides/*` - Gestión de viajes
-- `/api/bookings/*` - Gestión de reservas
-- `/api/payments/*` - Pagos con Stripe
-- `/api/chat/*` - Mensajes
+- `/api/bookings/*` - Gestión de reservas (aceptar/rechazar)
+- `/api/payments/*` - Pagos con Stripe + Connect
+- `/api/trip-chat/*` - Chat grupal en tiempo real
 - `/api/ratings/*` - Valoraciones
-- `/api/notifications/*` - Notificaciones
+- `/api/profile/*` - Perfil de usuario
+- `/api/bank-account/*` - Cuentas bancarias Stripe Connect
 - `/health` - Estado del servidor
 - `/metrics` - Métricas Prometheus
 
@@ -503,25 +487,26 @@ UniGO utiliza una arquitectura de **tres capas** con separación clara entre fro
 │                   CAPA DE APLICACIÓN                         │
 │                (Backend - Node.js/Express)                   │
 │                                                              │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │ API REST (Express Router)                           │   │
-│  │ • /api/auth - Autenticación JWT                     │   │
-│  │ • /api/users - Gestión usuarios                     │   │
-│  │ • /api/rides - Gestión viajes                       │   │
-│  │ • /api/bookings - Gestión reservas                  │   │
-│  │ • /api/payments - Integración Stripe                │   │
-│  │ • /api/chat - Mensajes HTTP                         │   │
-│  │ • /api/ratings - Valoraciones                       │   │
-│  │ • /api/notifications - Notificaciones               │   │
-│  └─────────────────────────────────────────────────────┘   │
+  ┌─────────────────────────────────────────────────────┐   │
+  │ API REST (Express Router)                           │   │
+  │ • /api/auth - Autenticación JWT                     │   │
+  │ • /api/users - Gestión usuarios                     │   │
+  │ • /api/rides - Gestión viajes                       │   │
+  │ • /api/bookings - Gestión reservas                  │   │
+  │ • /api/payments - Stripe + Connect                  │   │
+  │ • /api/trip-chat - Chat grupal por viaje            │   │
+  │ • /api/ratings - Valoraciones                       │   │
+  │ • /api/profile - Perfil de usuario                  │   │
+  │ • /api/bank-account - Stripe Connect                │   │
+  └─────────────────────────────────────────────────────┘   │
 │                                                              │
-│  ┌─────────────────────────────────────────────────────┐   │
-│  │ WebSocket Server (Socket.io)                        │   │
-│  │ • Chat en tiempo real                               │   │
-│  │ • Notificaciones push                               │   │
-│  │ • Indicadores de escritura                          │   │
-│  │ • Estados de conexión                               │   │
-│  └─────────────────────────────────────────────────────┘   │
+  ┌─────────────────────────────────────────────────────┐   │
+  │ WebSocket Server (Socket.io)                        │   │
+  │ • Chat grupal en tiempo real (trip_chat)            │   │
+  │ • Autenticación JWT por WebSocket                   │   │
+  │ • join_trip / send_trip_message events              │   │
+  │ • HTTP fallback para envío de mensajes              │   │
+  └─────────────────────────────────────────────────────┘   │
 │                                                              │
 │  ┌─────────────────────────────────────────────────────┐   │
 │  │ Middleware                                           │   │
@@ -549,15 +534,14 @@ UniGO utiliza una arquitectura de **tres capas** con separación clara entre fro
 │                   CAPA DE DATOS                              │
 │                 (PostgreSQL 14)                              │
 │                                                              │
-│  Tablas:                                                     │
-│  • users - Usuarios del sistema                             │
-│  • email_codes - Códigos de verificación                    │
-│  • rides - Viajes ofertados                                 │
-│  • bookings - Reservas de viajes                            │
-│  • payments - Transacciones de pago                         │
-│  • messages - Mensajes de chat                              │
-│  • notifications - Notificaciones in-app                    │
-│  • ratings - Valoraciones                                   │
+  Tablas:                                                     │
+  │  • users - Usuarios del sistema                             │
+  │  • email_codes - Códigos de verificación                    │
+  │  • rides - Viajes ofertados                                 │
+  │  • bookings - Reservas de viajes                            │
+  │  • payments - Transacciones de pago (Stripe)                │
+  │  • trip_group_messages - Mensajes chat grupal               │
+  │  • ratings - Valoraciones                                   │
 │                                                              │
 │  Puerto: 5432                                               │
 └────────────────────────┬─────────────────────────────────────┘
@@ -612,78 +596,85 @@ UniGO utiliza una arquitectura de **tres capas** con separación clara entre fro
 8. Backend: Incrementa métrica ridesTotal
 9. Backend → Frontend: Retorna ride creado
 10. Frontend: Redirige a /my-rides
-11. Frontend: Muestra notificación éxito
+11. Frontend: Muestra toast de éxito
 ```
 
-#### 3.2.3 Flujo de Reserva y Pago
+#### 3.2.3 Flujo de Reserva y Pago con Stripe Connect
 
 ```
-1. Pasajero → Frontend: Solicita reserva
-2. Frontend → Backend: POST /api/bookings
-3. Backend → Database: INSERT booking (status: pending)
-4. Backend → Email Service: Notifica conductor
-5. Email Service → SMTP: Envía email
-6. Backend → Frontend: Reserva creada
+1. Pasajero → Frontend: Reserva viaje con tarjeta guardada
+2. Frontend → Backend: POST /api/rides/:id/book
+3. Backend → Stripe: Crea PaymentIntent con transfer_data
+   - capture_method: manual (autorizar primero)
+   - transfer_data.destination: stripe_connect_account_id del conductor
+   - application_fee_percent: 15%
+4. Stripe → Backend: Retorna PaymentIntent ID
+5. Backend → Database: INSERT payment (status: authorized)
+                       INSERT booking (status: pending)
+6. Backend → Email Service: Notifica conductor
+7. Backend → Frontend: Reserva creada
 
 --- Conductor acepta ---
 
-7. Conductor → Frontend: Acepta reserva
-8. Frontend → Backend: POST /api/bookings/:id/accept
-9. Backend → Stripe: Crea PaymentIntent (capture_method: manual)
-10. Stripe → Backend: PaymentIntent ID
-11. Backend → Database: UPDATE booking (status: confirmed)
-                        INSERT payment (status: authorized)
-12. Backend → WebSocket: Emite notificación a pasajero
-13. Backend → Email Service: Notifica pasajero
-14. Backend → Frontend: Confirmación
+8. Conductor → Frontend: Acepta reserva
+9. Frontend → Backend: POST /api/bookings/:bookingId/accept
+10. Backend → Database: UPDATE booking (status: accepted)
+11. Backend → Frontend: Confirmación
 
 --- Viaje completado ---
 
-15. Conductor → Frontend: Marca viaje completado
-16. Frontend → Backend: POST /api/rides/:id/complete
-17. Backend → Stripe: Captura todos los PaymentIntents
-18. Stripe: Procesa pagos (aplica comisión 15%)
-19. Stripe → Backend: Pagos capturados
-20. Backend → Database: UPDATE payments (status: captured)
+12. Conductor → Frontend: Marca viaje completado
+13. Frontend → Backend: POST /api/rides/:id/complete
+14. Backend → Stripe: Captura PaymentIntent
+15. Stripe: Procesa pago y transfiere automáticamente al conductor (85%)
+16. Stripe → Backend: Payment captured webhook
+17. Backend → Database: UPDATE payments (status: captured)
                         UPDATE ride (is_completed: true)
-21. Backend → Frontend: Viaje completado
+18. Backend → Frontend: Viaje completado
+
+--- Cancelación con reembolso ---
+
+19. Pasajero → Frontend: Cancela reserva
+20. Frontend → Backend: POST /api/rides/cancel-booking
+21. Backend: Calcula penalización (0% si ≥24h, 30% si <24h)
+22. Backend → Stripe: Cancela PaymentIntent o crea refund
+23. Backend → Database: UPDATE booking (status: cancelled)
+24. Backend → Frontend: Reembolso confirmado
 ```
 
-#### 3.2.4 Flujo de Chat en Tiempo Real
+#### 3.2.4 Flujo de Chat Grupal en Tiempo Real
 
 ```
 --- Conexión WebSocket ---
 
-1. Usuario → Frontend: Accede a /chat/:tripId
-2. Frontend → Backend: Conecta WebSocket
+1. Usuario → Frontend: Abre chat desde /my-rides
+2. Frontend → Backend: Conecta WebSocket a ws://localhost:8000
 3. Frontend → Backend: Emite evento 'authenticate' con JWT
-4. Backend: Verifica JWT
+4. Backend: Verifica JWT y extrae user_id
 5. Backend → Frontend: Emite evento 'authenticated'
-6. Frontend → Backend: Emite evento 'join_trip' con tripId
-7. Backend: Verifica autorización (conductor o pasajero confirmado)
-8. Backend: Une socket a room `trip:${tripId}`
-9. Backend → Frontend: Emite evento 'joined_trip'
+6. Frontend → Backend: Emite evento 'join_trip' con trip_id
+7. Backend → Database: Verifica si es conductor o pasajero ACCEPTED
+8. Backend: Une socket a room `trip:${trip_id}`
+9. Backend → Frontend: Confirmación de unión
 
---- Envío de mensaje ---
+--- Envío de mensaje (WebSocket) ---
 
 10. Usuario → Frontend: Escribe y envía mensaje
-11. Frontend → Backend: Emite evento 'send_message'
-12. Backend → Database: INSERT INTO messages
-13. Database → Backend: Mensaje guardado
-14. Backend → Socket.io: Emite 'new_message' a room del trip
+11. Frontend → Backend: Emite evento 'send_trip_message'
+12. Backend → Database: INSERT INTO trip_group_messages
+13. Database → Backend: Mensaje guardado con ID
+14. Backend → Socket.io: Emite 'new_trip_message' a room del trip
 15. Socket.io → Todos en room: Reciben mensaje en tiempo real
-16. Backend: Incrementa métrica messagesTotal
+16. Frontend: Muestra mensaje instantáneamente
 
---- Indicador de escritura ---
+--- Fallback HTTP (si WebSocket falla) ---
 
-17. Usuario → Frontend: Comienza a escribir
-18. Frontend → Backend: Emite 'typing' cada 1 segundo
-19. Backend → Otros usuarios: Emite 'user_typing'
-20. Frontend: Muestra "Usuario está escribiendo..."
-21. Usuario para de escribir por 2 segundos
-22. Frontend → Backend: Emite 'stop_typing'
-23. Backend → Otros: Emite 'user_stop_typing'
-24. Frontend: Oculta indicador
+17. Frontend: Detecta desconexión de WebSocket
+18. Usuario → Frontend: Envía mensaje
+19. Frontend → Backend: POST /api/trip-chat/trips/:id/messages
+20. Backend → Database: INSERT INTO trip_group_messages
+21. Backend → Frontend: Mensaje guardado
+22. Frontend: Muestra mensaje localmente
 ```
 
 ### 3.3 Modelo de Base de Datos (ER Diagram)

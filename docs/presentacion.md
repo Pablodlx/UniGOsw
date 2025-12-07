@@ -43,22 +43,24 @@
 ## DIAPOSITIVA 3: Funcionalidades Principales
 
 ### Para Pasajeros
-- 🔍 Buscar viajes disponibles
-- 💳 Reservar con pago seguro (Stripe)
-- 💬 Chat en tiempo real
-- ⭐ Valorar conductores
+- 🔍 Buscar viajes por origen y destino
+- 💳 Reservar con pago seguro (Stripe Payment Intents)
+- 💬 Chat grupal en tiempo real (WebSocket)
+- ⭐ Valorar conductores después del viaje
+- 🔄 Cancelar con reembolso (0% penalización ≥24h)
 
 ### Para Conductores
-- 🚗 Publicar viajes
-- ✅ Gestionar solicitudes
-- 💰 Recibir pagos (menos 15% comisión)
-- 👥 Ver lista de pasajeros
+- 🚗 Publicar viajes con Google Maps
+- ✅ Aceptar/rechazar solicitudes de pasajeros
+- 💰 Recibir pagos automáticos (Stripe Connect - 85%)
+- 👥 Chat grupal con todos los pasajeros
+- 📊 Ver historial de viajes y valoraciones
 
 ### Para Todos
-- 📧 Email institucional obligatorio
+- 📧 Email institucional obligatorio (.ugr.es, .us.es, etc.)
 - 🔐 Autenticación segura (JWT)
-- 🔔 Notificaciones en tiempo real
-- 📱 Diseño responsive
+- 📱 Diseño responsive (móvil y escritorio)
+- 🗺️ Visualización de rutas con Google Maps
 
 ---
 
@@ -66,24 +68,26 @@
 
 ### Frontend
 - ⚛️ **React 19** + Next.js 15
-- 🎨 **Tailwind CSS 4**
-- 📘 **TypeScript**
-- 📡 **Socket.io-client** (WebSockets)
-- 💳 **Stripe React**
+- 🎨 **Tailwind CSS**
+- 📘 **TypeScript 5**
+- 📡 **Socket.io-client** (WebSocket)
+- 💳 **Stripe React** + Elements
+- 🗺️ **Google Maps React**
 
-### Backend ✨ (Migrado a Node.js)
-- 🟢 **Node.js** + Express.js
-- 🗄️ **PostgreSQL** + Sequelize
-- 🔐 **JWT** para autenticación
-- ✅ **Joi** para validación
-- 📧 **Nodemailer** para emails
-- 💳 **Stripe** para pagos
-- 🔌 **Socket.io** para tiempo real
+### Backend
+- 🟢 **Node.js 18+** + Express.js 4.x
+- 🗄️ **PostgreSQL 15** + Sequelize ORM
+- 🔐 **JWT** (jsonwebtoken)
+- ✅ **Joi** (validación de esquemas)
+- 📧 **Nodemailer** (SMTP)
+- 💳 **Stripe Payment + Connect**
+- 🔌 **Socket.io** (chat grupal en tiempo real)
 
 ### Infraestructura
 - 🐳 **Docker** + Docker Compose
-- 📊 **Prometheus** + Grafana
+- 📊 **Prometheus** + Grafana (métricas)
 - 📨 **MailHog** (desarrollo)
+- 🗄️ **pgAdmin** (gestión DB)
 
 ---
 
@@ -153,68 +157,78 @@
    └─> Info conductor, precio, plazas
 
 3. Hace clic en "Reservar"
-   └─> Guarda tarjeta (primera vez)
+   └─> Valida tarjeta guardada
 
-4. Stripe → SetupIntent
-   └─> Valida y guarda tarjeta
+4. Backend → Crea PaymentIntent con transfer_data
+   └─> capture_method: manual
+   └─> transfer_data.destination: stripe_connect_account_id del conductor
+   └─> application_fee_percent: 15
 
-5. Backend → Crea reserva (status: pending)
+5. Stripe → Autoriza pago (NO captura todavía)
+   └─> Retiene fondos en tarjeta del pasajero
+
+6. Backend → Crea reserva (status: pending)
    └─> Notifica conductor por email
 
-6. Conductor → Acepta reserva
-   └─> Stripe retiene el pago (NO captura)
+7. Conductor → Acepta reserva
+   └─> Backend: UPDATE booking (status: accepted)
+   └─> Asientos actualizados (X/Y disponibles)
 
-7. Reserva confirmada
-   └─> Chat habilitado
+8. Chat grupal habilitado
+   └─> Conductor + todos pasajeros ACCEPTED
 
-8. Al completar viaje
-   └─> Stripe captura pago (con comisión 15%)
+9. Conductor completa viaje
+   └─> Stripe: Captura pago y transfiere automáticamente al conductor (85%)
+   └─> Plataforma retiene comisión (15%)
 ```
 
 ---
 
-## DIAPOSITIVA 8: Chat en Tiempo Real
+## DIAPOSITIVA 8: Chat Grupal en Tiempo Real
 
-### Antes (Versión 1.0 - Python)
-- ❌ Polling cada 20 segundos
-- ❌ Alta carga en servidor
-- ❌ Latencia alta
+### Características
+- ✅ **Chat grupal** por viaje (conductor + pasajeros ACCEPTED)
+- ✅ **WebSocket** con Socket.io para mensajes instantáneos
+- ✅ **HTTP fallback** si WebSocket falla
+- ✅ **Autenticación JWT** en WebSocket
+- ✅ **Persistencia** en base de datos (TripGroupMessage)
 
-### Ahora (Versión 2.0 - Node.js)
-- ✅ **WebSockets** con Socket.io
-- ✅ Mensajes instantáneos
-- ✅ Indicador de escritura
-- ✅ Confirmación de lectura
-- ✅ Notificaciones push
+### Eventos WebSocket Implementados
+- `authenticate` - Validar JWT del usuario
+- `join_trip` - Unirse a chat de viaje (verifica permisos)
+- `send_trip_message` - Enviar mensaje grupal
+- `new_trip_message` - Recibir mensaje en tiempo real
 
-### Eventos Implementados
-- `authenticate` - Validar usuario
-- `join_trip` - Unirse a chat de viaje
-- `send_message` - Enviar mensaje
-- `new_message` - Recibir mensaje
-- `typing` / `stop_typing` - Indicadores
-- `mark_read` - Marcar como leído
+### Acceso al Chat
+- **Conductor**: Cuando tiene al menos 1 pasajero ACCEPTED
+- **Pasajero**: Solo si su reserva está en estado ACCEPTED
+- **Seguridad**: Validación backend de permisos en join_trip
 
 ---
 
-## DIAPOSITIVA 9: Sistema de Pagos con Stripe
+## DIAPOSITIVA 9: Sistema de Pagos con Stripe Connect
 
 ### Funcionalidades
-- 💳 **Setup Intent**: Guardar tarjeta
-- 🔒 **Payment Intent**: Autorización manual
-- 💰 **Captura diferida**: Al completar viaje
-- 🔄 **Reembolsos automáticos**: Al cancelar
-- 📊 **Comisión app**: 15%
-- 🔔 **Webhooks**: Procesamiento asíncrono
+- 💳 **Setup Intent**: Guardar tarjeta del pasajero
+- 🔗 **Stripe Connect**: Onboarding de conductores
+- 🔒 **Payment Intent con transfer_data**: Autorización manual + transferencia automática
+- 💰 **Captura diferida**: Al completar viaje (85% al conductor, 15% plataforma)
+- 🔄 **Reembolsos automáticos**: Con deducción de tarifas Stripe
+- 🔔 **Webhooks**: Procesamiento asíncrono (payment_intent.succeeded)
 
-### Penalizaciones por Cancelación
-| Tiempo antes | Pasajero | Conductor |
-|--------------|----------|-----------|
-| >24 horas    | 0%       | 0%        |
-| 12-24 horas  | 30%      | N/A       |
-| 6-12 horas   | 50%      | N/A       |
-| <6 horas     | 100%     | N/A       |
-| <24 horas    | N/A      | 50%       |
+### Ventajas de transfer_data
+- ✅ Transferencia automática al capturar pago
+- ✅ Comisión aplicada automáticamente (15%)
+- ✅ No requiere llamadas adicionales a Stripe
+- ✅ Menos errores que transferencias manuales
+
+### Penalizaciones por Cancelación (Pasajero)
+| Tiempo antes del viaje | Reembolso |
+|-----------------------|-----------|
+| ≥24 horas             | 100%      |
+| <24 horas             | 70% (30% penalización) |
+
+**Nota**: Tarifas de Stripe se deducen del reembolso
 
 ---
 
@@ -223,21 +237,26 @@
 ### Modelo Entidad-Relación
 
 ```
-users (8 tablas)
+users (7 tablas principales)
 ├── email_codes (verificación)
 ├── rides (viajes publicados)
-│   └── bookings (reservas)
+│   └── bookings (reservas de pasajeros)
 │       └── payments (transacciones Stripe)
-├── messages (chat)
-├── notifications (alertas in-app)
-└── ratings (valoraciones)
+├── trip_group_messages (chat grupal por viaje)
+└── ratings (valoraciones conductor/pasajero)
 ```
 
+### Campos Clave
+- **users**: stripe_connect_account_id (conductores)
+- **rides**: departure_lat/lng, destination_lat/lng
+- **bookings**: status (PENDING, ACCEPTED, REJECTED, CANCELLED)
+- **payments**: stripe_payment_intent_id, status (authorized, captured)
+
 ### Tecnologías
-- **PostgreSQL 14**: Base de datos relacional
-- **Sequelize**: ORM para Node.js
-- **Migraciones**: Control de versiones de BD
-- **Índices**: Optimización de consultas
+- **PostgreSQL 15**: Base de datos relacional
+- **Sequelize 6.x**: ORM para Node.js
+- **Migraciones**: Control de versiones de esquema
+- **Índices**: Optimización de consultas frecuentes
 
 ---
 
