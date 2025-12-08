@@ -16915,3 +16915,57 @@ TypeError: Cannot read properties of undefined (reading 'departure_city')
 2025-12-06 19:44:10 [info]: 📋 User 5 retrieved 1 bookings
 2025-12-06 19:44:10 [info]: 📋 User 5 retrieved 6 history items
 2025-12-06 19:44:16 [info]: SIGINT received, shutting down gracefully...
+2025-12-08 19:35:23 [info]: ✅ WebSocket handlers configured
+2025-12-08 19:35:23 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-08 19:35:23 [info]: ✅ Database connection established successfully
+2025-12-08 19:35:23 [info]: ======================================================================
+2025-12-08 19:35:23 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-08 19:35:23 [info]: ======================================================================
+2025-12-08 19:35:23 [info]: 📧 Email Configuration:
+2025-12-08 19:35:23 [info]:    Backend: mailhog
+2025-12-08 19:35:23 [info]:    Provider: MailHog
+2025-12-08 19:35:23 [info]:    From: noreply@unigo.app
+2025-12-08 19:35:23 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-08 19:35:23 [info]: ======================================================================
+2025-12-08 19:35:23 [info]: 💳 Stripe Configuration:
+2025-12-08 19:35:23 [info]:    Enabled: true
+2025-12-08 19:35:23 [info]:    Commission: 15%
+2025-12-08 19:35:23 [info]: ======================================================================
+2025-12-08 19:35:23 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-08 19:35:23 [info]: ✅ Environment: development
+2025-12-08 19:35:23 [info]: ✅ WebSocket server ready
+2025-12-08 19:35:23 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-08 19:35:23 [info]: ======================================================================
+2025-12-08 19:41:07 [info]: ✅ WebSocket handlers configured
+2025-12-08 19:41:07 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-08 19:41:07 [info]: ✅ Database connection established successfully
+2025-12-08 19:41:07 [info]: ======================================================================
+2025-12-08 19:41:07 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-08 19:41:07 [info]: ======================================================================
+2025-12-08 19:41:07 [info]: 📧 Email Configuration:
+2025-12-08 19:41:07 [info]:    Backend: mailhog
+2025-12-08 19:41:07 [info]:    Provider: MailHog
+2025-12-08 19:41:07 [info]:    From: noreply@unigo.app
+2025-12-08 19:41:07 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-08 19:41:07 [info]: ======================================================================
+2025-12-08 19:41:07 [info]: 💳 Stripe Configuration:
+2025-12-08 19:41:07 [info]:    Enabled: true
+2025-12-08 19:41:07 [info]:    Commission: 15%
+2025-12-08 19:41:07 [info]: ======================================================================
+2025-12-08 19:41:07 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-08 19:41:07 [info]: ✅ Environment: development
+2025-12-08 19:41:07 [info]: ✅ WebSocket server ready
+2025-12-08 19:41:07 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-08 19:41:07 [info]: ======================================================================
+2025-12-08 19:41:32 [info]: ✅ User logged in: pablo.decruzrodriguez@usp.ceu.es
+2025-12-08 19:41:35 [info]: 📋 Fetching rides for user 5
+2025-12-08 19:41:35 [info]: 📋 User 5 retrieved 3 own rides
+2025-12-08 19:41:35 [info]: 📋 User 5 retrieved 1 bookings
+2025-12-08 19:41:35 [info]: 📋 User 5 retrieved 1 bookings
+2025-12-08 19:41:35 [info]: 📋 User 5 retrieved 6 history items
+2025-12-08 19:41:35 [info]: 📋 Fetching rides for user 5
+2025-12-08 19:41:35 [info]: 📋 Found 0 pending bookings for driver 5
+2025-12-08 19:41:35 [info]: 📋 User 5 retrieved 3 own rides
+2025-12-08 19:41:35 [info]: 📋 Found 0 pending bookings for driver 5
+2025-12-08 19:41:36 [info]: 📋 User 5 retrieved 6 history items
+2025-12-08 19:42:13 [info]: SIGINT received, shutting down gracefully...
