@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST="{\"components/PaymentForm.tsx -> @/lib/api\":{\"id\":\"components/PaymentForm.tsx -> @/lib/api\",\"files\":[]},\"components/PaymentModal.tsx -> @/lib/api\":{\"id\":\"components/PaymentModal.tsx -> @/lib/api\",\"files\":[]}}"
