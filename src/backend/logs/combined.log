@@ -16969,3 +16969,2207 @@ TypeError: Cannot read properties of undefined (reading 'departure_city')
 2025-12-08 19:41:35 [info]: 📋 Found 0 pending bookings for driver 5
 2025-12-08 19:41:36 [info]: 📋 User 5 retrieved 6 history items
 2025-12-08 19:42:13 [info]: SIGINT received, shutting down gracefully...
+2025-12-08 23:45:07 [info]: ✅ WebSocket handlers configured
+2025-12-08 23:45:07 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-08 23:45:07 [info]: ✅ Database connection established successfully
+2025-12-08 23:45:07 [info]: ======================================================================
+2025-12-08 23:45:07 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-08 23:45:07 [info]: ======================================================================
+2025-12-08 23:45:07 [info]: 📧 Email Configuration:
+2025-12-08 23:45:07 [info]:    Backend: mailhog
+2025-12-08 23:45:07 [info]:    Provider: MailHog
+2025-12-08 23:45:07 [info]:    From: noreply@unigo.app
+2025-12-08 23:45:07 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-08 23:45:07 [info]: ======================================================================
+2025-12-08 23:45:07 [info]: 💳 Stripe Configuration:
+2025-12-08 23:45:07 [info]:    Enabled: true
+2025-12-08 23:45:07 [info]:    Commission: 15%
+2025-12-08 23:45:07 [info]: ======================================================================
+2025-12-08 23:45:07 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-08 23:45:07 [info]: ✅ Environment: development
+2025-12-08 23:45:07 [info]: ✅ WebSocket server ready
+2025-12-08 23:45:07 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-08 23:45:07 [info]: ======================================================================
+2025-12-08 23:45:53 [error]: Error: column "hashed_password" does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/auth.js:266:23
+2025-12-08 23:46:55 [info]: ✅ WebSocket handlers configured
+2025-12-08 23:46:55 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-08 23:46:55 [info]: ✅ Database connection established successfully
+2025-12-08 23:46:55 [info]: ======================================================================
+2025-12-08 23:46:55 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-08 23:46:55 [info]: ======================================================================
+2025-12-08 23:46:55 [info]: 📧 Email Configuration:
+2025-12-08 23:46:55 [info]:    Backend: mailhog
+2025-12-08 23:46:55 [info]:    Provider: MailHog
+2025-12-08 23:46:55 [info]:    From: noreply@unigo.app
+2025-12-08 23:46:55 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-08 23:46:55 [info]: ======================================================================
+2025-12-08 23:46:55 [info]: 💳 Stripe Configuration:
+2025-12-08 23:46:55 [info]:    Enabled: true
+2025-12-08 23:46:55 [info]:    Commission: 15%
+2025-12-08 23:46:55 [info]: ======================================================================
+2025-12-08 23:46:55 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-08 23:46:55 [info]: ✅ Environment: development
+2025-12-08 23:46:55 [info]: ✅ WebSocket server ready
+2025-12-08 23:46:55 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-08 23:46:55 [info]: ======================================================================
+2025-12-08 23:47:19 [error]: Error: column "avatar_url" does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/auth.js:266:23
+2025-12-08 23:47:44 [info]: ✅ WebSocket handlers configured
+2025-12-08 23:47:44 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-08 23:47:44 [info]: ✅ Database connection established successfully
+2025-12-08 23:47:44 [info]: ======================================================================
+2025-12-08 23:47:44 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-08 23:47:44 [info]: ======================================================================
+2025-12-08 23:47:44 [info]: 📧 Email Configuration:
+2025-12-08 23:47:44 [info]:    Backend: mailhog
+2025-12-08 23:47:44 [info]:    Provider: MailHog
+2025-12-08 23:47:44 [info]:    From: noreply@unigo.app
+2025-12-08 23:47:44 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-08 23:47:44 [info]: ======================================================================
+2025-12-08 23:47:44 [info]: 💳 Stripe Configuration:
+2025-12-08 23:47:44 [info]:    Enabled: true
+2025-12-08 23:47:44 [info]:    Commission: 15%
+2025-12-08 23:47:44 [info]: ======================================================================
+2025-12-08 23:47:44 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-08 23:47:44 [info]: ✅ Environment: development
+2025-12-08 23:47:44 [info]: ✅ WebSocket server ready
+2025-12-08 23:47:44 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-08 23:47:44 [info]: ======================================================================
+2025-12-08 23:47:49 [info]: ✅ WebSocket handlers configured
+2025-12-08 23:47:49 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-08 23:47:49 [info]: ✅ Database connection established successfully
+2025-12-08 23:47:49 [info]: ======================================================================
+2025-12-08 23:47:49 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-08 23:47:49 [info]: ======================================================================
+2025-12-08 23:47:49 [info]: 📧 Email Configuration:
+2025-12-08 23:47:49 [info]:    Backend: mailhog
+2025-12-08 23:47:49 [info]:    Provider: MailHog
+2025-12-08 23:47:49 [info]:    From: noreply@unigo.app
+2025-12-08 23:47:49 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-08 23:47:49 [info]: ======================================================================
+2025-12-08 23:47:49 [info]: 💳 Stripe Configuration:
+2025-12-08 23:47:49 [info]:    Enabled: true
+2025-12-08 23:47:49 [info]:    Commission: 15%
+2025-12-08 23:47:49 [info]: ======================================================================
+2025-12-08 23:47:49 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-08 23:47:49 [info]: ✅ Environment: development
+2025-12-08 23:47:49 [info]: ✅ WebSocket server ready
+2025-12-08 23:47:49 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-08 23:47:49 [info]: ======================================================================
+2025-12-08 23:48:02 [info]: ✅ WebSocket handlers configured
+2025-12-08 23:48:02 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-08 23:48:02 [info]: ✅ Database connection established successfully
+2025-12-08 23:48:02 [info]: ======================================================================
+2025-12-08 23:48:02 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-08 23:48:02 [info]: ======================================================================
+2025-12-08 23:48:02 [info]: 📧 Email Configuration:
+2025-12-08 23:48:02 [info]:    Backend: mailhog
+2025-12-08 23:48:02 [info]:    Provider: MailHog
+2025-12-08 23:48:02 [info]:    From: noreply@unigo.app
+2025-12-08 23:48:02 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-08 23:48:02 [info]: ======================================================================
+2025-12-08 23:48:02 [info]: 💳 Stripe Configuration:
+2025-12-08 23:48:02 [info]:    Enabled: true
+2025-12-08 23:48:02 [info]:    Commission: 15%
+2025-12-08 23:48:02 [info]: ======================================================================
+2025-12-08 23:48:02 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-08 23:48:02 [info]: ✅ Environment: development
+2025-12-08 23:48:02 [info]: ✅ WebSocket server ready
+2025-12-08 23:48:02 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-08 23:48:02 [info]: ======================================================================
+2025-12-08 23:50:40 [info]: ✅ WebSocket handlers configured
+2025-12-08 23:50:40 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-08 23:50:40 [info]: ✅ Database connection established successfully
+2025-12-08 23:50:40 [info]: ======================================================================
+2025-12-08 23:50:40 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-08 23:50:40 [info]: ======================================================================
+2025-12-08 23:50:40 [info]: 📧 Email Configuration:
+2025-12-08 23:50:40 [info]:    Backend: mailhog
+2025-12-08 23:50:40 [info]:    Provider: MailHog
+2025-12-08 23:50:40 [info]:    From: noreply@unigo.app
+2025-12-08 23:50:40 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-08 23:50:40 [info]: ======================================================================
+2025-12-08 23:50:40 [info]: 💳 Stripe Configuration:
+2025-12-08 23:50:40 [info]:    Enabled: true
+2025-12-08 23:50:40 [info]:    Commission: 15%
+2025-12-08 23:50:40 [info]: ======================================================================
+2025-12-08 23:50:40 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-08 23:50:40 [info]: ✅ Environment: development
+2025-12-08 23:50:40 [info]: ✅ WebSocket server ready
+2025-12-08 23:50:40 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-08 23:50:40 [info]: ======================================================================
+2025-12-08 23:50:46 [info]: ✅ WebSocket handlers configured
+2025-12-08 23:50:46 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-08 23:50:46 [info]: ✅ Database connection established successfully
+2025-12-08 23:50:46 [info]: ======================================================================
+2025-12-08 23:50:46 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-08 23:50:46 [info]: ======================================================================
+2025-12-08 23:50:46 [info]: 📧 Email Configuration:
+2025-12-08 23:50:46 [info]:    Backend: mailhog
+2025-12-08 23:50:46 [info]:    Provider: MailHog
+2025-12-08 23:50:46 [info]:    From: noreply@unigo.app
+2025-12-08 23:50:46 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-08 23:50:46 [info]: ======================================================================
+2025-12-08 23:50:46 [info]: 💳 Stripe Configuration:
+2025-12-08 23:50:46 [info]:    Enabled: true
+2025-12-08 23:50:46 [info]:    Commission: 15%
+2025-12-08 23:50:46 [info]: ======================================================================
+2025-12-08 23:50:46 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-08 23:50:46 [info]: ✅ Environment: development
+2025-12-08 23:50:46 [info]: ✅ WebSocket server ready
+2025-12-08 23:50:46 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-08 23:50:46 [info]: ======================================================================
+2025-12-08 23:51:16 [error]: Error: column "email" of relation "email_codes" does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.insert (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:2490:35)
+    at async EmailCode.create (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1362:12)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/auth.js:77:29
+2025-12-08 23:51:38 [info]: ✅ WebSocket handlers configured
+2025-12-08 23:51:38 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-08 23:51:38 [info]: ✅ Database connection established successfully
+2025-12-08 23:51:38 [info]: ======================================================================
+2025-12-08 23:51:38 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-08 23:51:38 [info]: ======================================================================
+2025-12-08 23:51:38 [info]: 📧 Email Configuration:
+2025-12-08 23:51:38 [info]:    Backend: mailhog
+2025-12-08 23:51:38 [info]:    Provider: MailHog
+2025-12-08 23:51:38 [info]:    From: noreply@unigo.app
+2025-12-08 23:51:38 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-08 23:51:38 [info]: ======================================================================
+2025-12-08 23:51:38 [info]: 💳 Stripe Configuration:
+2025-12-08 23:51:38 [info]:    Enabled: true
+2025-12-08 23:51:38 [info]:    Commission: 15%
+2025-12-08 23:51:38 [info]: ======================================================================
+2025-12-08 23:51:38 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-08 23:51:38 [info]: ✅ Environment: development
+2025-12-08 23:51:38 [info]: ✅ WebSocket server ready
+2025-12-08 23:51:38 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-08 23:51:38 [info]: ======================================================================
+2025-12-08 23:51:50 [info]: ✅ WebSocket handlers configured
+2025-12-08 23:51:50 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-08 23:51:50 [info]: ✅ Database connection established successfully
+2025-12-08 23:51:50 [info]: ======================================================================
+2025-12-08 23:51:50 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-08 23:51:50 [info]: ======================================================================
+2025-12-08 23:51:50 [info]: 📧 Email Configuration:
+2025-12-08 23:51:50 [info]:    Backend: mailhog
+2025-12-08 23:51:50 [info]:    Provider: MailHog
+2025-12-08 23:51:50 [info]:    From: noreply@unigo.app
+2025-12-08 23:51:50 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-08 23:51:50 [info]: ======================================================================
+2025-12-08 23:51:50 [info]: 💳 Stripe Configuration:
+2025-12-08 23:51:50 [info]:    Enabled: true
+2025-12-08 23:51:50 [info]:    Commission: 15%
+2025-12-08 23:51:50 [info]: ======================================================================
+2025-12-08 23:51:50 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-08 23:51:50 [info]: ✅ Environment: development
+2025-12-08 23:51:50 [info]: ✅ WebSocket server ready
+2025-12-08 23:51:50 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-08 23:51:50 [info]: ======================================================================
+2025-12-08 23:52:41 [info]: 📧 Email transporter configured for MailHog
+2025-12-08 23:52:41 [info]: ✅ Email sent: Código de verificación - UniGO to pablo.decruzrodriguez@usp.ceu.es
+2025-12-08 23:52:41 [info]: ✅ User registered: pablo.decruzrodriguez@usp.ceu.es
+2025-12-08 23:53:00 [info]: ✅ User verified: pablo.decruzrodriguez@usp.ceu.es
+2025-12-08 23:53:02 [error]: Error: column Rating.rated_id does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Rating.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/ratings.js:18:21
+2025-12-08 23:53:03 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:53:08 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:53:13 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:53:18 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:53:23 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:53:28 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:53:32 [info]: ✅ WebSocket handlers configured
+2025-12-08 23:53:32 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-08 23:53:32 [info]: ✅ Database connection established successfully
+2025-12-08 23:53:32 [info]: ======================================================================
+2025-12-08 23:53:32 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-08 23:53:32 [info]: ======================================================================
+2025-12-08 23:53:32 [info]: 📧 Email Configuration:
+2025-12-08 23:53:32 [info]:    Backend: mailhog
+2025-12-08 23:53:32 [info]:    Provider: MailHog
+2025-12-08 23:53:32 [info]:    From: noreply@unigo.app
+2025-12-08 23:53:32 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-08 23:53:32 [info]: ======================================================================
+2025-12-08 23:53:32 [info]: 💳 Stripe Configuration:
+2025-12-08 23:53:32 [info]:    Enabled: true
+2025-12-08 23:53:32 [info]:    Commission: 15%
+2025-12-08 23:53:32 [info]: ======================================================================
+2025-12-08 23:53:32 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-08 23:53:32 [info]: ✅ Environment: development
+2025-12-08 23:53:32 [info]: ✅ WebSocket server ready
+2025-12-08 23:53:32 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-08 23:53:32 [info]: ======================================================================
+2025-12-08 23:53:33 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:55:46 [info]: 📧 Email transporter configured for MailHog
+2025-12-08 23:55:47 [info]: ✅ Email sent: Código de verificación - UniGO to pablo.decruzrodriguez@usp.ceu.es
+2025-12-08 23:55:47 [info]: ✅ User registered: pablo.decruzrodriguez@usp.ceu.es
+2025-12-08 23:56:05 [info]: ✅ User verified: pablo.decruzrodriguez@usp.ceu.es
+2025-12-08 23:56:09 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:56:14 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:56:19 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:56:21 [info]: 📋 Fetching rides for user 1
+2025-12-08 23:56:21 [info]: 📋 Fetching rides for user 1
+2025-12-08 23:56:21 [error]: Failed to get my rides: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:402:19
+2025-12-08 23:56:21 [error]: Error: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:402:19
+2025-12-08 23:56:21 [error]: Failed to get my bookings: column Booking.seats does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-08 23:56:21 [error]: Error: column Booking.seats does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-08 23:56:21 [error]: Failed to get my rides: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:402:19
+2025-12-08 23:56:21 [error]: Error: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:402:19
+2025-12-08 23:56:21 [error]: Failed to get ride history: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:511:22
+2025-12-08 23:56:21 [error]: Error: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:511:22
+2025-12-08 23:56:21 [error]: Error: column Ride.is_completed does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:505:19
+2025-12-08 23:56:21 [error]: Error: column Ride.is_completed does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:505:19
+2025-12-08 23:56:21 [error]: Failed to get my bookings: column Booking.seats does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-08 23:56:21 [error]: Error: column Booking.seats does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-08 23:56:21 [error]: Failed to get ride history: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:511:22
+2025-12-08 23:56:21 [error]: Error: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:511:22
+2025-12-08 23:56:24 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:56:29 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:56:34 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:56:39 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:56:44 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:56:49 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:56:54 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:56:59 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:04 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:09 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:14 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:19 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:21 [info]: 📋 Fetching rides for user 1
+2025-12-08 23:57:21 [error]: Failed to get my rides: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:402:19
+2025-12-08 23:57:21 [error]: Error: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:402:19
+2025-12-08 23:57:21 [error]: Failed to get ride history: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:511:22
+2025-12-08 23:57:21 [error]: Error: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:511:22
+2025-12-08 23:57:21 [error]: Failed to get my bookings: column Booking.seats does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-08 23:57:21 [error]: Error: column Booking.seats does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-08 23:57:24 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:29 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:34 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:39 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:44 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:49 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:54 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:59 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:58:04 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:58:09 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:58:13 [info]: ✅ WebSocket handlers configured
+2025-12-08 23:58:13 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-08 23:58:13 [info]: ✅ Database connection established successfully
+2025-12-08 23:58:13 [info]: ======================================================================
+2025-12-08 23:58:13 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-08 23:58:13 [info]: ======================================================================
+2025-12-08 23:58:13 [info]: 📧 Email Configuration:
+2025-12-08 23:58:13 [info]:    Backend: mailhog
+2025-12-08 23:58:13 [info]:    Provider: MailHog
+2025-12-08 23:58:13 [info]:    From: noreply@unigo.app
+2025-12-08 23:58:13 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-08 23:58:13 [info]: ======================================================================
+2025-12-08 23:58:13 [info]: 💳 Stripe Configuration:
+2025-12-08 23:58:13 [info]:    Enabled: true
+2025-12-08 23:58:13 [info]:    Commission: 15%
+2025-12-08 23:58:13 [info]: ======================================================================
+2025-12-08 23:58:13 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-08 23:58:13 [info]: ✅ Environment: development
+2025-12-08 23:58:13 [info]: ✅ WebSocket server ready
+2025-12-08 23:58:13 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-08 23:58:13 [info]: ======================================================================
+2025-12-08 23:58:13 [info]: 🔍 Search request:
+2025-12-08 23:58:13 [error]: ❌ Search failed: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:268:26
+2025-12-08 23:58:14 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:58:16 [info]: 🔍 Search request:
+2025-12-08 23:58:16 [error]: ❌ Search failed: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:268:26
+2025-12-08 23:58:19 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:58:24 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:58:54 [info]: 📧 Email transporter configured for MailHog
+2025-12-08 23:58:54 [info]: ✅ Email sent: Código de verificación - UniGO to pablo.decruzrodriguez@usp.ceu.es
+2025-12-08 23:58:54 [info]: ✅ User registered: pablo.decruzrodriguez@usp.ceu.es
+2025-12-08 23:59:07 [info]: ✅ User verified: pablo.decruzrodriguez@usp.ceu.es
+2025-12-08 23:59:09 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:59:14 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:59:19 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:59:24 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:59:24 [info]: 📋 Fetching rides for user 1
+2025-12-08 23:59:24 [info]: 📋 User 1 retrieved 0 own rides
+2025-12-08 23:59:24 [error]: Failed to get my bookings: invalid input value for enum enum_bookings_status: "REJECTED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-08 23:59:24 [error]: Error: invalid input value for enum enum_bookings_status: "REJECTED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-08 23:59:24 [error]: Failed to get ride history: invalid input value for enum enum_bookings_status: "COMPLETED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:530:25
+2025-12-08 23:59:24 [error]: Error: invalid input value for enum enum_bookings_status: "COMPLETED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:530:25
+2025-12-08 23:59:24 [info]: 📋 Fetching rides for user 1
+2025-12-08 23:59:24 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:517:22
+2025-12-08 23:59:24 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:517:22
+2025-12-08 23:59:24 [info]: 📋 User 1 retrieved 0 own rides
+2025-12-08 23:59:24 [error]: Failed to get my bookings: invalid input value for enum enum_bookings_status: "REJECTED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-08 23:59:24 [error]: Error: invalid input value for enum enum_bookings_status: "REJECTED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-08 23:59:24 [error]: Failed to get ride history: invalid input value for enum enum_bookings_status: "COMPLETED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:530:25
+2025-12-08 23:59:24 [error]: Error: invalid input value for enum enum_bookings_status: "COMPLETED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:530:25
+2025-12-08 23:59:29 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:59:34 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:59:39 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:59:44 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:59:49 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:59:54 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:59:59 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-09 00:00:04 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-09 00:00:09 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-09 00:00:14 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-09 00:00:16 [info]: ✅ Stripe client initialized
+2025-12-09 00:00:16 [info]: ℹ️ User 1 has no Stripe customer ID yet
+2025-12-09 00:00:16 [info]: ℹ️ User 1 has no Stripe customer ID yet
+2025-12-09 00:00:19 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-09 00:02:10 [info]: ✅ WebSocket handlers configured
+2025-12-09 00:02:10 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 00:02:10 [info]: ✅ Database connection established successfully
+2025-12-09 00:02:10 [info]: ======================================================================
+2025-12-09 00:02:10 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 00:02:10 [info]: ======================================================================
+2025-12-09 00:02:10 [info]: 📧 Email Configuration:
+2025-12-09 00:02:10 [info]:    Backend: mailhog
+2025-12-09 00:02:10 [info]:    Provider: MailHog
+2025-12-09 00:02:10 [info]:    From: noreply@unigo.app
+2025-12-09 00:02:10 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 00:02:10 [info]: ======================================================================
+2025-12-09 00:02:10 [info]: 💳 Stripe Configuration:
+2025-12-09 00:02:10 [info]:    Enabled: true
+2025-12-09 00:02:10 [info]:    Commission: 15%
+2025-12-09 00:02:10 [info]: ======================================================================
+2025-12-09 00:02:10 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 00:02:10 [info]: ✅ Environment: development
+2025-12-09 00:02:10 [info]: ✅ WebSocket server ready
+2025-12-09 00:02:10 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 00:02:10 [info]: ======================================================================
+2025-12-09 00:02:19 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:02:19 [error]: Failed to get ride history: invalid input value for enum enum_bookings_status: "COMPLETED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:530:25
+2025-12-09 00:02:19 [error]: Error: invalid input value for enum enum_bookings_status: "COMPLETED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:530:25
+2025-12-09 00:02:19 [error]: Failed to get my bookings: invalid input value for enum enum_bookings_status: "REJECTED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-09 00:02:19 [error]: Error: invalid input value for enum enum_bookings_status: "REJECTED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-09 00:02:19 [info]: 📋 User 1 retrieved 0 own rides
+2025-12-09 00:02:19 [error]: Failed to get ride history: invalid input value for enum enum_bookings_status: "COMPLETED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:530:25
+2025-12-09 00:02:19 [error]: Error: invalid input value for enum enum_bookings_status: "COMPLETED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:530:25
+2025-12-09 00:02:19 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 00:02:19 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:02:19 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 00:02:19 [error]: Failed to get my bookings: invalid input value for enum enum_bookings_status: "REJECTED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-09 00:02:19 [error]: Error: invalid input value for enum enum_bookings_status: "REJECTED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-09 00:02:19 [info]: 📋 User 1 retrieved 0 own rides
+2025-12-09 00:03:00 [info]: ✅ WebSocket handlers configured
+2025-12-09 00:03:00 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 00:03:00 [info]: ✅ Database connection established successfully
+2025-12-09 00:03:00 [info]: ======================================================================
+2025-12-09 00:03:00 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 00:03:00 [info]: ======================================================================
+2025-12-09 00:03:00 [info]: 📧 Email Configuration:
+2025-12-09 00:03:00 [info]:    Backend: mailhog
+2025-12-09 00:03:00 [info]:    Provider: MailHog
+2025-12-09 00:03:00 [info]:    From: noreply@unigo.app
+2025-12-09 00:03:00 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 00:03:00 [info]: ======================================================================
+2025-12-09 00:03:00 [info]: 💳 Stripe Configuration:
+2025-12-09 00:03:00 [info]:    Enabled: true
+2025-12-09 00:03:00 [info]:    Commission: 15%
+2025-12-09 00:03:00 [info]: ======================================================================
+2025-12-09 00:03:00 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 00:03:00 [info]: ✅ Environment: development
+2025-12-09 00:03:00 [info]: ✅ WebSocket server ready
+2025-12-09 00:03:00 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 00:03:00 [info]: ======================================================================
+2025-12-09 00:03:19 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:03:19 [info]: 📋 User 1 retrieved 0 own rides
+2025-12-09 00:03:19 [error]: Failed to get my bookings: invalid input value for enum enum_bookings_status: "REJECTED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-09 00:03:19 [error]: Error: invalid input value for enum enum_bookings_status: "REJECTED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-09 00:03:19 [error]: Failed to get ride history: invalid input value for enum enum_bookings_status: "COMPLETED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:530:25
+2025-12-09 00:03:19 [error]: Error: invalid input value for enum enum_bookings_status: "COMPLETED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:530:25
+2025-12-09 00:03:32 [info]: ✅ WebSocket handlers configured
+2025-12-09 00:03:32 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 00:03:32 [info]: ✅ Database connection established successfully
+2025-12-09 00:03:32 [info]: ======================================================================
+2025-12-09 00:03:32 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 00:03:32 [info]: ======================================================================
+2025-12-09 00:03:32 [info]: 📧 Email Configuration:
+2025-12-09 00:03:32 [info]:    Backend: mailhog
+2025-12-09 00:03:32 [info]:    Provider: MailHog
+2025-12-09 00:03:32 [info]:    From: noreply@unigo.app
+2025-12-09 00:03:32 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 00:03:32 [info]: ======================================================================
+2025-12-09 00:03:32 [info]: 💳 Stripe Configuration:
+2025-12-09 00:03:32 [info]:    Enabled: true
+2025-12-09 00:03:32 [info]:    Commission: 15%
+2025-12-09 00:03:32 [info]: ======================================================================
+2025-12-09 00:03:32 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 00:03:32 [info]: ✅ Environment: development
+2025-12-09 00:03:32 [info]: ✅ WebSocket server ready
+2025-12-09 00:03:32 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 00:03:32 [info]: ======================================================================
+2025-12-09 00:04:03 [info]: ✅ WebSocket handlers configured
+2025-12-09 00:04:03 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 00:04:04 [info]: ✅ Database connection established successfully
+2025-12-09 00:04:04 [info]: ======================================================================
+2025-12-09 00:04:04 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 00:04:04 [info]: ======================================================================
+2025-12-09 00:04:04 [info]: 📧 Email Configuration:
+2025-12-09 00:04:04 [info]:    Backend: mailhog
+2025-12-09 00:04:04 [info]:    Provider: MailHog
+2025-12-09 00:04:04 [info]:    From: noreply@unigo.app
+2025-12-09 00:04:04 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 00:04:04 [info]: ======================================================================
+2025-12-09 00:04:04 [info]: 💳 Stripe Configuration:
+2025-12-09 00:04:04 [info]:    Enabled: true
+2025-12-09 00:04:04 [info]:    Commission: 15%
+2025-12-09 00:04:04 [info]: ======================================================================
+2025-12-09 00:04:04 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 00:04:04 [info]: ✅ Environment: development
+2025-12-09 00:04:04 [info]: ✅ WebSocket server ready
+2025-12-09 00:04:04 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 00:04:04 [info]: ======================================================================
+2025-12-09 00:04:19 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:04:19 [info]: 📋 User 1 retrieved 0 own rides
+2025-12-09 00:04:19 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:04:19 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:04:37 [info]: ✅ WebSocket handlers configured
+2025-12-09 00:04:37 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 00:04:37 [info]: ✅ Database connection established successfully
+2025-12-09 00:04:37 [info]: ======================================================================
+2025-12-09 00:04:37 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 00:04:37 [info]: ======================================================================
+2025-12-09 00:04:37 [info]: 📧 Email Configuration:
+2025-12-09 00:04:37 [info]:    Backend: mailhog
+2025-12-09 00:04:37 [info]:    Provider: MailHog
+2025-12-09 00:04:37 [info]:    From: noreply@unigo.app
+2025-12-09 00:04:37 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 00:04:37 [info]: ======================================================================
+2025-12-09 00:04:37 [info]: 💳 Stripe Configuration:
+2025-12-09 00:04:37 [info]:    Enabled: true
+2025-12-09 00:04:37 [info]:    Commission: 15%
+2025-12-09 00:04:37 [info]: ======================================================================
+2025-12-09 00:04:37 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 00:04:37 [info]: ✅ Environment: development
+2025-12-09 00:04:37 [info]: ✅ WebSocket server ready
+2025-12-09 00:04:37 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 00:04:37 [info]: ======================================================================
+2025-12-09 00:05:19 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:05:19 [info]: 📋 User 1 retrieved 0 own rides
+2025-12-09 00:05:19 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:05:19 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:05:52 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:05:52 [info]: 📋 User 1 retrieved 0 own rides
+2025-12-09 00:05:52 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:05:52 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:05:52 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 00:05:52 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:05:52 [info]: 📋 User 1 retrieved 0 own rides
+2025-12-09 00:05:52 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:05:52 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:05:52 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 00:06:29 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:06:29 [info]: 📋 User 1 retrieved 0 own rides
+2025-12-09 00:06:29 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:06:29 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:06:29 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:06:29 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:06:29 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 00:06:29 [info]: 📋 User 1 retrieved 0 own rides
+2025-12-09 00:06:29 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:06:29 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 00:07:00 [info]: ✅ Stripe client initialized
+2025-12-09 00:07:00 [info]: ℹ️ User 1 has no Stripe customer ID yet
+2025-12-09 00:07:00 [info]: ℹ️ User 1 has no Stripe customer ID yet
+2025-12-09 00:08:00 [info]: 🏦 Created Stripe Connect account acct_1ScDX7BLiaKzhdWT for user 1
+2025-12-09 00:08:02 [info]: 💳 Added bank account (1332) to Connect account acct_1ScDX7BLiaKzhdWT
+2025-12-09 00:08:09 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:08:09 [info]: 📋 User 1 retrieved 0 own rides
+2025-12-09 00:08:09 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:08:09 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:08:09 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:08:09 [info]: 📋 User 1 retrieved 0 own rides
+2025-12-09 00:08:09 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:08:09 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 00:08:09 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 00:08:09 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:08:45 [info]: 🚗 Ride created: 1 by user 1
+2025-12-09 00:08:49 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:08:49 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:08:49 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:08:49 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:08:49 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:08:49 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 00:08:49 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:08:49 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:08:49 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 00:08:49 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:09:14 [info]: 📧 Email transporter configured for MailHog
+2025-12-09 00:09:14 [info]: ✅ Email sent: Código de verificación - UniGO to pablo@ceu.es
+2025-12-09 00:09:14 [info]: ✅ User registered: pablo@ceu.es
+2025-12-09 00:09:23 [info]: ✅ User verified: pablo@ceu.es
+2025-12-09 00:09:42 [info]: 🔍 Search request:
+2025-12-09 00:09:42 [info]: ✅ Found 1 exact matches
+2025-12-09 00:09:42 [info]: ✅ Found 0 nearby matches
+2025-12-09 00:09:42 [info]: 🎯 Search completed: 1 exact + 0 nearby
+2025-12-09 00:09:44 [info]: ℹ️ User 2 has no Stripe customer ID yet
+2025-12-09 00:09:50 [info]: ℹ️ User 2 has no Stripe customer ID yet
+2025-12-09 00:09:53 [info]: ℹ️ User 2 has no Stripe customer ID yet
+2025-12-09 00:09:59 [info]: ℹ️ User 2 has no Stripe customer ID yet
+2025-12-09 00:09:59 [info]: ℹ️ User 2 has no Stripe customer ID yet
+2025-12-09 00:10:01 [info]: 📋 Fetching rides for user 2
+2025-12-09 00:10:01 [info]: 📋 Fetching rides for user 2
+2025-12-09 00:10:01 [info]: 📋 User 2 retrieved 0 own rides
+2025-12-09 00:10:01 [info]: 📋 User 2 retrieved 0 own rides
+2025-12-09 00:10:01 [info]: 📋 User 2 retrieved 0 bookings
+2025-12-09 00:10:01 [info]: 📋 Found 0 pending bookings for driver 2
+2025-12-09 00:10:01 [info]: 📋 User 2 retrieved 0 history items
+2025-12-09 00:10:01 [info]: 📋 User 2 retrieved 0 history items
+2025-12-09 00:10:01 [info]: 📋 User 2 retrieved 0 bookings
+2025-12-09 00:10:01 [info]: 📋 Found 0 pending bookings for driver 2
+2025-12-09 00:10:03 [info]: ℹ️ User 2 has no Stripe customer ID yet
+2025-12-09 00:10:03 [info]: ℹ️ User 2 has no Stripe customer ID yet
+2025-12-09 00:10:05 [info]: 💳 Created Stripe customer cus_TZMHwk0O986nWL for user 2
+2025-12-09 00:10:05 [info]: 🔐 Created SetupIntent seti_1ScDZBPe1uq215LfmEkRMiEQ for user 2
+2025-12-09 00:10:21 [info]: ✅ Attached payment method pm_1ScDZPPe1uq215LfVM6ZCkB8 to customer cus_TZMHwk0O986nWL
+2025-12-09 00:10:21 [info]: 💳 Saved payment method pm_1ScDZPPe1uq215LfVM6ZCkB8 for user 2
+2025-12-09 00:10:21 [info]: 💳 Retrieved 1 payment methods for user 2
+2025-12-09 00:10:26 [info]: 🔍 Search request:
+2025-12-09 00:10:26 [info]: ✅ Found 1 exact matches
+2025-12-09 00:10:26 [info]: ✅ Found 0 nearby matches
+2025-12-09 00:10:26 [info]: 🎯 Search completed: 1 exact + 0 nearby
+2025-12-09 00:10:29 [info]: 💳 Retrieved 1 payment methods for user 2
+2025-12-09 00:10:29 [info]: Created PaymentIntent: pi_3ScDZZPe1uq215Lf0KZpNgcj for amount 2.07
+2025-12-09 00:10:29 [error]: Failed to authorize payment: column "user_id" of relation "payments" does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:1157:11
+2025-12-09 00:10:29 [error]: Error details:
+2025-12-09 00:11:10 [info]: 💳 Retrieved 1 payment methods for user 2
+2025-12-09 00:11:10 [info]: 💳 Retrieved 1 payment methods for user 2
+2025-12-09 00:12:16 [info]: ✅ User logged in: pablo.decruzrodriguez@usp.ceu.es
+2025-12-09 00:12:18 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:12:18 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:12:18 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:12:18 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:12:18 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:12:18 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:12:18 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:12:18 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 00:12:18 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:12:18 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 00:12:29 [info]: ✅ User logged in: pablo@ceu.es
+2025-12-09 00:12:57 [info]: 🔍 Search request:
+2025-12-09 00:12:57 [info]: ✅ Found 1 exact matches
+2025-12-09 00:12:57 [info]: ✅ Found 0 nearby matches
+2025-12-09 00:12:57 [info]: 🎯 Search completed: 1 exact + 0 nearby
+2025-12-09 00:12:59 [info]: 💳 Retrieved 1 payment methods for user 2
+2025-12-09 00:13:00 [info]: Created PaymentIntent: pi_3ScDc0Pe1uq215Lf0WgvRJna for amount 2.07
+2025-12-09 00:13:00 [error]: Failed to authorize payment: column "user_id" of relation "payments" does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:1157:11
+2025-12-09 00:13:00 [error]: Error details:
+2025-12-09 00:16:51 [info]: ✅ WebSocket handlers configured
+2025-12-09 00:16:51 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 00:16:51 [info]: ✅ Database connection established successfully
+2025-12-09 00:16:51 [info]: ======================================================================
+2025-12-09 00:16:51 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 00:16:51 [info]: ======================================================================
+2025-12-09 00:16:51 [info]: 📧 Email Configuration:
+2025-12-09 00:16:51 [info]:    Backend: mailhog
+2025-12-09 00:16:51 [info]:    Provider: MailHog
+2025-12-09 00:16:51 [info]:    From: noreply@unigo.app
+2025-12-09 00:16:51 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 00:16:51 [info]: ======================================================================
+2025-12-09 00:16:51 [info]: 💳 Stripe Configuration:
+2025-12-09 00:16:51 [info]:    Enabled: true
+2025-12-09 00:16:51 [info]:    Commission: 15%
+2025-12-09 00:16:51 [info]: ======================================================================
+2025-12-09 00:16:51 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 00:16:51 [info]: ✅ Environment: development
+2025-12-09 00:16:51 [info]: ✅ WebSocket server ready
+2025-12-09 00:16:51 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 00:16:51 [info]: ======================================================================
+2025-12-09 00:18:27 [info]: 🔍 Search request:
+2025-12-09 00:18:27 [info]: ✅ Found 1 exact matches
+2025-12-09 00:18:27 [info]: ✅ Found 0 nearby matches
+2025-12-09 00:18:27 [info]: 🎯 Search completed: 1 exact + 0 nearby
+2025-12-09 00:18:29 [info]: ✅ Stripe client initialized
+2025-12-09 00:18:29 [info]: 💳 Retrieved 1 payment methods for user 2
+2025-12-09 00:18:30 [info]: Created PaymentIntent: pi_3ScDhKPe1uq215Lf01aWg8W5 for amount 2.07
+2025-12-09 00:18:30 [error]: Failed to authorize payment: column "user_id" of relation "payments" does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:1157:11
+2025-12-09 00:18:30 [error]: Error details: column "user_id" of relation "payments" does not exist
+2025-12-09 00:20:13 [info]: SIGINT received, shutting down gracefully...
+2025-12-09 00:20:20 [info]: ✅ WebSocket handlers configured
+2025-12-09 00:20:20 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 00:20:20 [info]: ✅ Database connection established successfully
+2025-12-09 00:20:20 [info]: ======================================================================
+2025-12-09 00:20:20 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 00:20:20 [info]: ======================================================================
+2025-12-09 00:20:20 [info]: 📧 Email Configuration:
+2025-12-09 00:20:20 [info]:    Backend: mailhog
+2025-12-09 00:20:20 [info]:    Provider: MailHog
+2025-12-09 00:20:20 [info]:    From: noreply@unigo.app
+2025-12-09 00:20:20 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 00:20:20 [info]: ======================================================================
+2025-12-09 00:20:20 [info]: 💳 Stripe Configuration:
+2025-12-09 00:20:20 [info]:    Enabled: true
+2025-12-09 00:20:20 [info]:    Commission: 15%
+2025-12-09 00:20:20 [info]: ======================================================================
+2025-12-09 00:20:20 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 00:20:20 [info]: ✅ Environment: development
+2025-12-09 00:20:20 [info]: ✅ WebSocket server ready
+2025-12-09 00:20:20 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 00:20:20 [info]: ======================================================================
+2025-12-09 00:20:48 [info]: 🔍 Search request:
+2025-12-09 00:20:48 [info]: ✅ Found 1 exact matches
+2025-12-09 00:20:48 [info]: ✅ Found 0 nearby matches
+2025-12-09 00:20:48 [info]: 🎯 Search completed: 1 exact + 0 nearby
+2025-12-09 00:20:50 [info]: ✅ Stripe client initialized
+2025-12-09 00:20:50 [info]: 💳 Retrieved 1 payment methods for user 2
+2025-12-09 00:20:51 [info]: Created PaymentIntent: pi_3ScDjaPe1uq215Lf0pBj3MVq for amount 2.07
+2025-12-09 00:20:51 [error]: Failed to authorize payment: column "user_id" of relation "payments" does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:1157:11
+2025-12-09 00:20:51 [error]: Error details: column "user_id" of relation "payments" does not exist
+2025-12-09 00:21:07 [info]: ✅ WebSocket handlers configured
+2025-12-09 00:21:07 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 00:21:07 [info]: ✅ Database connection established successfully
+2025-12-09 00:21:07 [info]: ======================================================================
+2025-12-09 00:21:07 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 00:21:07 [info]: ======================================================================
+2025-12-09 00:21:07 [info]: 📧 Email Configuration:
+2025-12-09 00:21:07 [info]:    Backend: mailhog
+2025-12-09 00:21:07 [info]:    Provider: MailHog
+2025-12-09 00:21:07 [info]:    From: noreply@unigo.app
+2025-12-09 00:21:07 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 00:21:07 [info]: ======================================================================
+2025-12-09 00:21:07 [info]: 💳 Stripe Configuration:
+2025-12-09 00:21:07 [info]:    Enabled: true
+2025-12-09 00:21:07 [info]:    Commission: 15%
+2025-12-09 00:21:07 [info]: ======================================================================
+2025-12-09 00:21:07 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 00:21:07 [info]: ✅ Environment: development
+2025-12-09 00:21:07 [info]: ✅ WebSocket server ready
+2025-12-09 00:21:07 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 00:21:07 [info]: ======================================================================
+2025-12-09 00:22:17 [info]: 🔍 Search request:
+2025-12-09 00:22:17 [info]: ✅ Found 1 exact matches
+2025-12-09 00:22:17 [info]: ✅ Found 0 nearby matches
+2025-12-09 00:22:17 [info]: 🎯 Search completed: 1 exact + 0 nearby
+2025-12-09 00:22:19 [info]: ✅ Stripe client initialized
+2025-12-09 00:22:19 [info]: 💳 Retrieved 1 payment methods for user 2
+2025-12-09 00:22:20 [info]: Created PaymentIntent: pi_3ScDl1Pe1uq215Lf1Mrk3cxv for amount 2.07
+2025-12-09 00:22:20 [error]: Failed to authorize payment: column "user_id" of relation "payments" does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:1157:11
+2025-12-09 00:22:20 [error]: Error details: column "user_id" of relation "payments" does not exist
+2025-12-09 00:22:46 [info]: SIGINT received, shutting down gracefully...
+2025-12-09 00:25:05 [info]: ✅ WebSocket handlers configured
+2025-12-09 00:25:05 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 00:25:05 [info]: ✅ Database connection established successfully
+2025-12-09 00:25:05 [info]: ======================================================================
+2025-12-09 00:25:05 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 00:25:05 [info]: ======================================================================
+2025-12-09 00:25:05 [info]: 📧 Email Configuration:
+2025-12-09 00:25:05 [info]:    Backend: mailhog
+2025-12-09 00:25:05 [info]:    Provider: MailHog
+2025-12-09 00:25:05 [info]:    From: noreply@unigo.app
+2025-12-09 00:25:05 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 00:25:05 [info]: ======================================================================
+2025-12-09 00:25:05 [info]: 💳 Stripe Configuration:
+2025-12-09 00:25:05 [info]:    Enabled: true
+2025-12-09 00:25:05 [info]:    Commission: 15%
+2025-12-09 00:25:05 [info]: ======================================================================
+2025-12-09 00:25:05 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 00:25:05 [info]: ✅ Environment: development
+2025-12-09 00:25:05 [info]: ✅ WebSocket server ready
+2025-12-09 00:25:05 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 00:25:05 [info]: ======================================================================
+2025-12-09 00:25:29 [info]: ✅ User logged in: pablo@ceu.es
+2025-12-09 00:25:39 [info]: 🔍 Search request:
+2025-12-09 00:25:39 [info]: ✅ Found 0 exact matches
+2025-12-09 00:25:39 [info]: ✅ Found 1 nearby matches
+2025-12-09 00:25:39 [info]: 🎯 Search completed: 0 exact + 1 nearby
+2025-12-09 00:25:45 [info]: ✅ Stripe client initialized
+2025-12-09 00:25:45 [info]: 💳 Retrieved 1 payment methods for user 2
+2025-12-09 00:25:46 [info]: Created PaymentIntent: pi_3ScDoLPe1uq215Lf1oOpztqc for amount 2.07
+2025-12-09 00:25:46 [error]: Failed to authorize payment: column "user_id" of relation "payments" does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:1157:11
+2025-12-09 00:25:46 [error]: Error details: column "user_id" of relation "payments" does not exist
+2025-12-09 00:32:34 [info]: SIGINT received, shutting down gracefully...
+2025-12-09 00:32:40 [info]: ✅ WebSocket handlers configured
+2025-12-09 00:32:40 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 00:32:40 [info]: ✅ Database connection established successfully
+2025-12-09 00:32:40 [info]: ======================================================================
+2025-12-09 00:32:40 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 00:32:40 [info]: ======================================================================
+2025-12-09 00:32:40 [info]: 📧 Email Configuration:
+2025-12-09 00:32:40 [info]:    Backend: mailhog
+2025-12-09 00:32:40 [info]:    Provider: MailHog
+2025-12-09 00:32:40 [info]:    From: noreply@unigo.app
+2025-12-09 00:32:40 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 00:32:40 [info]: ======================================================================
+2025-12-09 00:32:40 [info]: 💳 Stripe Configuration:
+2025-12-09 00:32:40 [info]:    Enabled: true
+2025-12-09 00:32:40 [info]:    Commission: 15%
+2025-12-09 00:32:40 [info]: ======================================================================
+2025-12-09 00:32:40 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 00:32:40 [info]: ✅ Environment: development
+2025-12-09 00:32:40 [info]: ✅ WebSocket server ready
+2025-12-09 00:32:40 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 00:32:40 [info]: ======================================================================
+2025-12-09 00:32:50 [info]: 🔍 Search request:
+2025-12-09 00:32:50 [info]: ✅ Found 1 exact matches
+2025-12-09 00:32:50 [info]: ✅ Found 0 nearby matches
+2025-12-09 00:32:51 [info]: 🎯 Search completed: 1 exact + 0 nearby
+2025-12-09 00:32:53 [info]: ✅ Stripe client initialized
+2025-12-09 00:32:54 [info]: 💳 Retrieved 1 payment methods for user 2
+2025-12-09 00:32:55 [info]: Created PaymentIntent: pi_3ScDvGPe1uq215Lf0IPNKHOb for amount 2.07
+2025-12-09 00:32:55 [error]: Failed to authorize payment: column "user_id" of relation "payments" does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:1157:11
+2025-12-09 00:32:55 [error]: Error details: column "user_id" of relation "payments" does not exist
+2025-12-09 00:33:57 [info]: SIGINT received, shutting down gracefully...
+2025-12-09 00:37:36 [info]: ✅ WebSocket handlers configured
+2025-12-09 00:37:36 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 00:37:36 [info]: ✅ Database connection established successfully
+2025-12-09 00:37:36 [info]: ======================================================================
+2025-12-09 00:37:36 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 00:37:36 [info]: ======================================================================
+2025-12-09 00:37:36 [info]: 📧 Email Configuration:
+2025-12-09 00:37:36 [info]:    Backend: mailhog
+2025-12-09 00:37:36 [info]:    Provider: MailHog
+2025-12-09 00:37:36 [info]:    From: noreply@unigo.app
+2025-12-09 00:37:36 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 00:37:36 [info]: ======================================================================
+2025-12-09 00:37:36 [info]: 💳 Stripe Configuration:
+2025-12-09 00:37:36 [info]:    Enabled: true
+2025-12-09 00:37:36 [info]:    Commission: 15%
+2025-12-09 00:37:36 [info]: ======================================================================
+2025-12-09 00:37:36 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 00:37:36 [info]: ✅ Environment: development
+2025-12-09 00:37:36 [info]: ✅ WebSocket server ready
+2025-12-09 00:37:36 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 00:37:36 [info]: ======================================================================
+2025-12-09 00:37:40 [info]: 🔍 Search request:
+2025-12-09 00:37:40 [info]: ✅ Found 1 exact matches
+2025-12-09 00:37:40 [info]: ✅ Found 0 nearby matches
+2025-12-09 00:37:40 [info]: 🎯 Search completed: 1 exact + 0 nearby
+2025-12-09 00:37:42 [info]: ✅ Stripe client initialized
+2025-12-09 00:37:42 [info]: 💳 Retrieved 1 payment methods for user 2
+2025-12-09 00:37:43 [info]: Created PaymentIntent: pi_3ScDzvPe1uq215Lf1lM2GjoY for amount 2.07
+2025-12-09 00:37:43 [info]: 💳 Payment authorized for booking 8: €2.07, PaymentIntent: pi_3ScDzvPe1uq215Lf1lM2GjoY
+2025-12-09 00:37:43 [info]: ✅ Booking created: Ride 1, User 2, Seats 1, Payment: authorized
+2025-12-09 00:37:58 [info]: ✅ User logged in: pablo.decruzrodriguez@usp.ceu.es
+2025-12-09 00:38:00 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:38:00 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:38:00 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:38:00 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:38:00 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:38:00 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:38:00 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:38:00 [info]: 📋 Found 1 pending bookings for driver 1
+2025-12-09 00:38:00 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:38:00 [info]: 📋 Found 1 pending bookings for driver 1
+2025-12-09 00:38:02 [error]: Error: invalid input value for enum enum_payments_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:167:23
+2025-12-09 00:38:17 [error]: Error: invalid input value for enum enum_payments_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:167:23
+2025-12-09 00:38:36 [info]: ❌ Booking 8 rejected by driver 1
+2025-12-09 00:38:36 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 00:38:47 [info]: ✅ User logged in: pablo@ceu.es
+2025-12-09 00:38:52 [info]: 🔍 Search request:
+2025-12-09 00:38:52 [info]: ✅ Found 1 exact matches
+2025-12-09 00:38:52 [info]: ✅ Found 0 nearby matches
+2025-12-09 00:38:52 [info]: 🎯 Search completed: 1 exact + 0 nearby
+2025-12-09 00:38:54 [info]: 💳 Retrieved 1 payment methods for user 2
+2025-12-09 00:38:54 [info]: Created PaymentIntent: pi_3ScE14Pe1uq215Lf0WPQUctT for amount 2.07
+2025-12-09 00:38:54 [info]: 💳 Payment authorized for booking 9: €2.07, PaymentIntent: pi_3ScE14Pe1uq215Lf0WPQUctT
+2025-12-09 00:38:54 [info]: ✅ Booking created: Ride 1, User 2, Seats 1, Payment: authorized
+2025-12-09 00:39:08 [info]: ✅ User logged in: pablo.decruzrodriguez@usp.ceu.es
+2025-12-09 00:39:09 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:39:09 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:39:09 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:39:09 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:39:09 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:39:09 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:39:09 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:39:09 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:39:09 [info]: 📋 Found 1 pending bookings for driver 1
+2025-12-09 00:39:09 [info]: 📋 Found 1 pending bookings for driver 1
+2025-12-09 00:40:09 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:40:09 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:40:09 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:40:09 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:41:09 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:41:09 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:41:09 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:41:09 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:42:09 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:42:09 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:42:09 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:42:09 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:43:09 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:43:09 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:43:09 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:43:09 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:44:09 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:44:09 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:44:09 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:44:09 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:44:53 [info]: SIGINT received, shutting down gracefully...
+2025-12-09 00:47:55 [info]: ✅ WebSocket handlers configured
+2025-12-09 00:47:55 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 00:47:55 [info]: ✅ Database connection established successfully
+2025-12-09 00:47:55 [info]: ======================================================================
+2025-12-09 00:47:55 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 00:47:55 [info]: ======================================================================
+2025-12-09 00:47:55 [info]: 📧 Email Configuration:
+2025-12-09 00:47:55 [info]:    Backend: mailhog
+2025-12-09 00:47:55 [info]:    Provider: MailHog
+2025-12-09 00:47:55 [info]:    From: noreply@unigo.app
+2025-12-09 00:47:55 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 00:47:55 [info]: ======================================================================
+2025-12-09 00:47:55 [info]: 💳 Stripe Configuration:
+2025-12-09 00:47:55 [info]:    Enabled: true
+2025-12-09 00:47:55 [info]:    Commission: 15%
+2025-12-09 00:47:55 [info]: ======================================================================
+2025-12-09 00:47:55 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 00:47:55 [info]: ✅ Environment: development
+2025-12-09 00:47:55 [info]: ✅ WebSocket server ready
+2025-12-09 00:47:55 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 00:47:55 [info]: ======================================================================
+2025-12-09 00:48:00 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:48:00 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:48:00 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:48:00 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:48:00 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:48:00 [info]: 📋 Found 1 pending bookings for driver 1
+2025-12-09 00:48:00 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:48:00 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:48:00 [info]: 📋 Found 1 pending bookings for driver 1
+2025-12-09 00:48:00 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:48:03 [error]: Error: invalid input value for enum enum_payments_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:167:23
+2025-12-09 00:48:26 [info]: SIGINT received, shutting down gracefully...
+2025-12-09 00:51:50 [info]: ✅ WebSocket handlers configured
+2025-12-09 00:51:50 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 00:51:50 [info]: ✅ Database connection established successfully
+2025-12-09 00:51:50 [info]: ======================================================================
+2025-12-09 00:51:50 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 00:51:50 [info]: ======================================================================
+2025-12-09 00:51:50 [info]: 📧 Email Configuration:
+2025-12-09 00:51:50 [info]:    Backend: mailhog
+2025-12-09 00:51:50 [info]:    Provider: MailHog
+2025-12-09 00:51:50 [info]:    From: noreply@unigo.app
+2025-12-09 00:51:50 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 00:51:50 [info]: ======================================================================
+2025-12-09 00:51:50 [info]: 💳 Stripe Configuration:
+2025-12-09 00:51:50 [info]:    Enabled: true
+2025-12-09 00:51:50 [info]:    Commission: 15%
+2025-12-09 00:51:50 [info]: ======================================================================
+2025-12-09 00:51:50 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 00:51:50 [info]: ✅ Environment: development
+2025-12-09 00:51:50 [info]: ✅ WebSocket server ready
+2025-12-09 00:51:50 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 00:51:50 [info]: ======================================================================
+2025-12-09 00:51:57 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:51:57 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:51:57 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:51:57 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:51:57 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:51:57 [info]: 📋 Found 1 pending bookings for driver 1
+2025-12-09 00:51:57 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:51:57 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:51:57 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:51:57 [info]: 📋 Found 1 pending bookings for driver 1
+2025-12-09 00:51:59 [info]: ✅ Stripe client initialized
+2025-12-09 00:51:59 [info]: Created PaymentIntent: pi_3ScEDjPe1uq215Lf0cPUCRgx for amount 2.07
+2025-12-09 00:52:00 [info]: Captured PaymentIntent: pi_3ScEDjPe1uq215Lf0cPUCRgx
+2025-12-09 00:52:00 [error]: Failed to create/capture payment: column "user_id" of relation "payments" does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:225:9
+2025-12-09 00:52:57 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:52:57 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:52:57 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:52:57 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:53:56 [info]: ✅ WebSocket handlers configured
+2025-12-09 00:53:56 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 00:53:56 [info]: ✅ Database connection established successfully
+2025-12-09 00:53:56 [info]: ======================================================================
+2025-12-09 00:53:56 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 00:53:56 [info]: ======================================================================
+2025-12-09 00:53:56 [info]: 📧 Email Configuration:
+2025-12-09 00:53:56 [info]:    Backend: mailhog
+2025-12-09 00:53:56 [info]:    Provider: MailHog
+2025-12-09 00:53:56 [info]:    From: noreply@unigo.app
+2025-12-09 00:53:56 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 00:53:56 [info]: ======================================================================
+2025-12-09 00:53:56 [info]: 💳 Stripe Configuration:
+2025-12-09 00:53:56 [info]:    Enabled: true
+2025-12-09 00:53:56 [info]:    Commission: 15%
+2025-12-09 00:53:56 [info]: ======================================================================
+2025-12-09 00:53:56 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 00:53:56 [info]: ✅ Environment: development
+2025-12-09 00:53:56 [info]: ✅ WebSocket server ready
+2025-12-09 00:53:56 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 00:53:56 [info]: ======================================================================
+2025-12-09 00:53:57 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:53:57 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:53:57 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:53:57 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:54:00 [info]: SIGINT received, shutting down gracefully...
+2025-12-09 00:54:14 [info]: ✅ WebSocket handlers configured
+2025-12-09 00:54:14 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 00:54:14 [info]: ✅ Database connection established successfully
+2025-12-09 00:54:14 [info]: ======================================================================
+2025-12-09 00:54:14 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 00:54:14 [info]: ======================================================================
+2025-12-09 00:54:14 [info]: 📧 Email Configuration:
+2025-12-09 00:54:14 [info]:    Backend: mailhog
+2025-12-09 00:54:14 [info]:    Provider: MailHog
+2025-12-09 00:54:14 [info]:    From: noreply@unigo.app
+2025-12-09 00:54:14 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 00:54:14 [info]: ======================================================================
+2025-12-09 00:54:14 [info]: 💳 Stripe Configuration:
+2025-12-09 00:54:14 [info]:    Enabled: true
+2025-12-09 00:54:14 [info]:    Commission: 15%
+2025-12-09 00:54:14 [info]: ======================================================================
+2025-12-09 00:54:14 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 00:54:14 [info]: ✅ Environment: development
+2025-12-09 00:54:14 [info]: ✅ WebSocket server ready
+2025-12-09 00:54:14 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 00:54:14 [info]: ======================================================================
+2025-12-09 00:54:19 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:54:19 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:54:19 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:54:19 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:54:19 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:54:19 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:54:19 [info]: 📋 Found 1 pending bookings for driver 1
+2025-12-09 00:54:19 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:54:19 [info]: 📋 Found 1 pending bookings for driver 1
+2025-12-09 00:54:19 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:54:22 [info]: ✅ Stripe client initialized
+2025-12-09 00:54:23 [info]: Created PaymentIntent: pi_3ScEG3Pe1uq215Lf0UNuJm3Y for amount 2.07
+2025-12-09 00:54:24 [info]: Captured PaymentIntent: pi_3ScEG3Pe1uq215Lf0UNuJm3Y
+2025-12-09 00:54:24 [error]: Failed to create/capture payment: Assignment to constant variable.
+TypeError: Assignment to constant variable.
+    at file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:250:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-12-09 00:54:59 [info]: ✅ WebSocket handlers configured
+2025-12-09 00:54:59 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 00:54:59 [info]: ✅ Database connection established successfully
+2025-12-09 00:54:59 [info]: ======================================================================
+2025-12-09 00:54:59 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 00:54:59 [info]: ======================================================================
+2025-12-09 00:54:59 [info]: 📧 Email Configuration:
+2025-12-09 00:54:59 [info]:    Backend: mailhog
+2025-12-09 00:54:59 [info]:    Provider: MailHog
+2025-12-09 00:54:59 [info]:    From: noreply@unigo.app
+2025-12-09 00:54:59 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 00:54:59 [info]: ======================================================================
+2025-12-09 00:54:59 [info]: 💳 Stripe Configuration:
+2025-12-09 00:54:59 [info]:    Enabled: true
+2025-12-09 00:54:59 [info]:    Commission: 15%
+2025-12-09 00:54:59 [info]: ======================================================================
+2025-12-09 00:54:59 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 00:54:59 [info]: ✅ Environment: development
+2025-12-09 00:54:59 [info]: ✅ WebSocket server ready
+2025-12-09 00:54:59 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 00:54:59 [info]: ======================================================================
+2025-12-09 00:55:12 [info]: ✅ WebSocket handlers configured
+2025-12-09 00:55:12 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 00:55:12 [info]: ✅ Database connection established successfully
+2025-12-09 00:55:12 [info]: ======================================================================
+2025-12-09 00:55:12 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 00:55:12 [info]: ======================================================================
+2025-12-09 00:55:12 [info]: 📧 Email Configuration:
+2025-12-09 00:55:12 [info]:    Backend: mailhog
+2025-12-09 00:55:12 [info]:    Provider: MailHog
+2025-12-09 00:55:12 [info]:    From: noreply@unigo.app
+2025-12-09 00:55:12 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 00:55:12 [info]: ======================================================================
+2025-12-09 00:55:12 [info]: 💳 Stripe Configuration:
+2025-12-09 00:55:12 [info]:    Enabled: true
+2025-12-09 00:55:12 [info]:    Commission: 15%
+2025-12-09 00:55:12 [info]: ======================================================================
+2025-12-09 00:55:12 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 00:55:12 [info]: ✅ Environment: development
+2025-12-09 00:55:12 [info]: ✅ WebSocket server ready
+2025-12-09 00:55:12 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 00:55:12 [info]: ======================================================================
+2025-12-09 00:55:20 [info]: 🔍 Search request:
+2025-12-09 00:55:20 [info]: ✅ Found 1 exact matches
+2025-12-09 00:55:20 [info]: ✅ Found 0 nearby matches
+2025-12-09 00:55:20 [info]: 🎯 Search completed: 1 exact + 0 nearby
+2025-12-09 00:55:24 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:55:24 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:55:24 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:55:24 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:55:24 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:55:24 [info]: 📋 Found 1 pending bookings for driver 1
+2025-12-09 00:55:24 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:55:24 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:55:24 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:55:24 [info]: 📋 Found 1 pending bookings for driver 1
+2025-12-09 00:55:26 [info]: ✅ Stripe client initialized
+2025-12-09 00:55:27 [info]: Created PaymentIntent: pi_3ScEH4Pe1uq215Lf0vzP7P1Y for amount 2.07
+2025-12-09 00:55:27 [info]: Captured PaymentIntent: pi_3ScEH4Pe1uq215Lf0vzP7P1Y
+2025-12-09 00:55:27 [error]: Failed to create/capture payment: invalid input value for enum enum_bookings_status: "ACCEPTED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.update (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:355:12)
+    at async model.save (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:2490:35)
+    at async model.update (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:2598:12)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:253:9
+2025-12-09 00:56:05 [info]: SIGINT received, shutting down gracefully...
+2025-12-09 00:58:14 [info]: ✅ WebSocket handlers configured
+2025-12-09 00:58:14 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 00:58:14 [info]: ✅ Database connection established successfully
+2025-12-09 00:58:14 [info]: ======================================================================
+2025-12-09 00:58:14 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 00:58:14 [info]: ======================================================================
+2025-12-09 00:58:14 [info]: 📧 Email Configuration:
+2025-12-09 00:58:14 [info]:    Backend: mailhog
+2025-12-09 00:58:14 [info]:    Provider: MailHog
+2025-12-09 00:58:14 [info]:    From: noreply@unigo.app
+2025-12-09 00:58:14 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 00:58:14 [info]: ======================================================================
+2025-12-09 00:58:14 [info]: 💳 Stripe Configuration:
+2025-12-09 00:58:14 [info]:    Enabled: true
+2025-12-09 00:58:14 [info]:    Commission: 15%
+2025-12-09 00:58:14 [info]: ======================================================================
+2025-12-09 00:58:14 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 00:58:14 [info]: ✅ Environment: development
+2025-12-09 00:58:14 [info]: ✅ WebSocket server ready
+2025-12-09 00:58:14 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 00:58:14 [info]: ======================================================================
+2025-12-09 00:58:15 [info]: ✅ User logged in: pablo.decruzrodriguez@usp.ceu.es
+2025-12-09 00:58:18 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:58:18 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:58:18 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:58:18 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:58:18 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:58:18 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 00:58:18 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:58:18 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:58:18 [info]: 📋 Found 1 pending bookings for driver 1
+2025-12-09 00:58:18 [info]: 📋 Found 1 pending bookings for driver 1
+2025-12-09 00:58:21 [info]: ✅ Stripe client initialized
+2025-12-09 00:58:22 [info]: Created PaymentIntent: pi_3ScEJtPe1uq215Lf1G3Ow8KA for amount 2.07
+2025-12-09 00:58:23 [info]: Captured PaymentIntent: pi_3ScEJtPe1uq215Lf1G3Ow8KA
+2025-12-09 00:58:23 [info]: 💰 Payment 2 created and captured for booking 9, amount: €2.07
+2025-12-09 00:58:23 [info]: 📧 Email transporter configured for MailHog
+2025-12-09 00:58:23 [error]: Failed to send confirmation email: Cannot read properties of undefined (reading 'departure_city')
+TypeError: Cannot read properties of undefined (reading 'departure_city')
+    at EmailService.sendBookingConfirmation (file:///home/pablodlx/UniGOsw/src/backend/src/utils/email.js:111:54)
+    at file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:275:26
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-12-09 00:58:23 [info]: ✅ Booking 9 accepted successfully. Seats updated: 0 -> 0
+2025-12-09 00:58:23 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 00:58:23 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:58:23 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:59:18 [info]: 📋 Fetching rides for user 1
+2025-12-09 00:59:18 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 00:59:18 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 00:59:18 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 01:00:18 [info]: 📋 Fetching rides for user 1
+2025-12-09 01:00:18 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 01:00:18 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 01:00:18 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 01:01:18 [info]: 📋 Fetching rides for user 1
+2025-12-09 01:01:18 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 01:01:18 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 01:01:18 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 01:01:55 [info]: SIGINT received, shutting down gracefully...
+2025-12-09 01:05:11 [info]: ✅ WebSocket handlers configured
+2025-12-09 01:05:11 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 01:05:11 [info]: ✅ Database connection established successfully
+2025-12-09 01:05:11 [info]: ======================================================================
+2025-12-09 01:05:11 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 01:05:11 [info]: ======================================================================
+2025-12-09 01:05:11 [info]: 📧 Email Configuration:
+2025-12-09 01:05:11 [info]:    Backend: mailhog
+2025-12-09 01:05:11 [info]:    Provider: MailHog
+2025-12-09 01:05:11 [info]:    From: noreply@unigo.app
+2025-12-09 01:05:11 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 01:05:11 [info]: ======================================================================
+2025-12-09 01:05:11 [info]: 💳 Stripe Configuration:
+2025-12-09 01:05:11 [info]:    Enabled: true
+2025-12-09 01:05:11 [info]:    Commission: 15%
+2025-12-09 01:05:11 [info]: ======================================================================
+2025-12-09 01:05:11 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 01:05:11 [info]: ✅ Environment: development
+2025-12-09 01:05:11 [info]: ✅ WebSocket server ready
+2025-12-09 01:05:11 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 01:05:11 [info]: ======================================================================
+2025-12-09 01:05:26 [info]: ✅ User logged in: pablo.decruzrodriguez@usp.ceu.es
+2025-12-09 01:05:28 [info]: 📋 Fetching rides for user 1
+2025-12-09 01:05:28 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 01:05:28 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 01:05:28 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 01:05:28 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 01:05:28 [info]: 📋 Fetching rides for user 1
+2025-12-09 01:05:28 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 01:05:28 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 01:05:28 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 01:05:28 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 01:06:28 [info]: 📋 Fetching rides for user 1
+2025-12-09 01:06:28 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 01:06:28 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 01:06:28 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 01:07:28 [info]: 📋 Fetching rides for user 1
+2025-12-09 01:07:28 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 01:07:28 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 01:07:28 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 01:07:32 [info]: SIGINT received, shutting down gracefully...
+2025-12-09 01:15:24 [info]: ✅ WebSocket handlers configured
+2025-12-09 01:15:24 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 01:15:24 [info]: ✅ Database connection established successfully
+2025-12-09 01:15:24 [info]: ======================================================================
+2025-12-09 01:15:24 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 01:15:24 [info]: ======================================================================
+2025-12-09 01:15:24 [info]: 📧 Email Configuration:
+2025-12-09 01:15:24 [info]:    Backend: mailhog
+2025-12-09 01:15:24 [info]:    Provider: MailHog
+2025-12-09 01:15:24 [info]:    From: noreply@unigo.app
+2025-12-09 01:15:24 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 01:15:24 [info]: ======================================================================
+2025-12-09 01:15:24 [info]: 💳 Stripe Configuration:
+2025-12-09 01:15:24 [info]:    Enabled: true
+2025-12-09 01:15:24 [info]:    Commission: 15%
+2025-12-09 01:15:24 [info]: ======================================================================
+2025-12-09 01:15:24 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 01:15:24 [info]: ✅ Environment: development
+2025-12-09 01:15:24 [info]: ✅ WebSocket server ready
+2025-12-09 01:15:24 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 01:15:24 [info]: ======================================================================
+2025-12-09 01:15:30 [info]: 📋 Fetching rides for user 1
+2025-12-09 01:15:30 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 01:15:30 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 01:15:30 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 01:15:30 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 01:15:30 [info]: 📋 Fetching rides for user 1
+2025-12-09 01:15:30 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 01:15:30 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 01:15:30 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 01:15:30 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 01:15:40 [info]: 📋 Fetching rides for user 1
+2025-12-09 01:15:40 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 01:15:40 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 01:15:40 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 01:15:40 [info]: 📋 Fetching rides for user 1
+2025-12-09 01:15:40 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 01:15:40 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 01:15:40 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 01:15:40 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 01:15:40 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 01:16:20 [info]: ✅ WebSocket handlers configured
+2025-12-09 01:16:20 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 01:16:20 [info]: ✅ Database connection established successfully
+2025-12-09 01:16:20 [info]: ======================================================================
+2025-12-09 01:16:20 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 01:16:20 [info]: ======================================================================
+2025-12-09 01:16:20 [info]: 📧 Email Configuration:
+2025-12-09 01:16:20 [info]:    Backend: mailhog
+2025-12-09 01:16:20 [info]:    Provider: MailHog
+2025-12-09 01:16:20 [info]:    From: noreply@unigo.app
+2025-12-09 01:16:20 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 01:16:20 [info]: ======================================================================
+2025-12-09 01:16:20 [info]: 💳 Stripe Configuration:
+2025-12-09 01:16:20 [info]:    Enabled: true
+2025-12-09 01:16:20 [info]:    Commission: 15%
+2025-12-09 01:16:20 [info]: ======================================================================
+2025-12-09 01:16:20 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 01:16:20 [info]: ✅ Environment: development
+2025-12-09 01:16:20 [info]: ✅ WebSocket server ready
+2025-12-09 01:16:20 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 01:16:20 [info]: ======================================================================
+2025-12-09 01:16:40 [info]: 📋 Fetching rides for user 1
+2025-12-09 01:16:40 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 01:16:40 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 01:16:40 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 01:16:42 [info]: ✅ WebSocket handlers configured
+2025-12-09 01:16:42 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 01:16:42 [info]: ✅ Database connection established successfully
+2025-12-09 01:16:42 [info]: ======================================================================
+2025-12-09 01:16:42 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 01:16:42 [info]: ======================================================================
+2025-12-09 01:16:42 [info]: 📧 Email Configuration:
+2025-12-09 01:16:42 [info]:    Backend: mailhog
+2025-12-09 01:16:42 [info]:    Provider: MailHog
+2025-12-09 01:16:42 [info]:    From: noreply@unigo.app
+2025-12-09 01:16:42 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 01:16:42 [info]: ======================================================================
+2025-12-09 01:16:42 [info]: 💳 Stripe Configuration:
+2025-12-09 01:16:42 [info]:    Enabled: true
+2025-12-09 01:16:42 [info]:    Commission: 15%
+2025-12-09 01:16:42 [info]: ======================================================================
+2025-12-09 01:16:42 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 01:16:42 [info]: ✅ Environment: development
+2025-12-09 01:16:42 [info]: ✅ WebSocket server ready
+2025-12-09 01:16:42 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 01:16:42 [info]: ======================================================================
+2025-12-09 01:17:08 [info]: 📋 Fetching rides for user 1
+2025-12-09 01:17:08 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 01:17:08 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 01:17:08 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 01:17:08 [info]: 📋 Fetching rides for user 1
+2025-12-09 01:17:08 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 01:17:08 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 01:17:08 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 01:17:08 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 01:17:08 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 01:17:56 [info]: ✅ WebSocket handlers configured
+2025-12-09 01:17:56 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 01:17:56 [info]: ✅ Database connection established successfully
+2025-12-09 01:17:56 [info]: ======================================================================
+2025-12-09 01:17:56 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 01:17:56 [info]: ======================================================================
+2025-12-09 01:17:56 [info]: 📧 Email Configuration:
+2025-12-09 01:17:56 [info]:    Backend: mailhog
+2025-12-09 01:17:56 [info]:    Provider: MailHog
+2025-12-09 01:17:56 [info]:    From: noreply@unigo.app
+2025-12-09 01:17:56 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 01:17:56 [info]: ======================================================================
+2025-12-09 01:17:56 [info]: 💳 Stripe Configuration:
+2025-12-09 01:17:56 [info]:    Enabled: true
+2025-12-09 01:17:56 [info]:    Commission: 15%
+2025-12-09 01:17:56 [info]: ======================================================================
+2025-12-09 01:17:56 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 01:17:56 [info]: ✅ Environment: development
+2025-12-09 01:17:56 [info]: ✅ WebSocket server ready
+2025-12-09 01:17:56 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 01:17:56 [info]: ======================================================================
+2025-12-09 01:18:04 [info]: ✅ WebSocket handlers configured
+2025-12-09 01:18:04 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 01:18:04 [info]: ✅ Database connection established successfully
+2025-12-09 01:18:04 [info]: ======================================================================
+2025-12-09 01:18:04 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 01:18:04 [info]: ======================================================================
+2025-12-09 01:18:04 [info]: 📧 Email Configuration:
+2025-12-09 01:18:04 [info]:    Backend: mailhog
+2025-12-09 01:18:04 [info]:    Provider: MailHog
+2025-12-09 01:18:04 [info]:    From: noreply@unigo.app
+2025-12-09 01:18:04 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 01:18:04 [info]: ======================================================================
+2025-12-09 01:18:04 [info]: 💳 Stripe Configuration:
+2025-12-09 01:18:04 [info]:    Enabled: true
+2025-12-09 01:18:04 [info]:    Commission: 15%
+2025-12-09 01:18:04 [info]: ======================================================================
+2025-12-09 01:18:04 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 01:18:04 [info]: ✅ Environment: development
+2025-12-09 01:18:04 [info]: ✅ WebSocket server ready
+2025-12-09 01:18:04 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 01:18:04 [info]: ======================================================================
+2025-12-09 01:18:09 [info]: 📋 Fetching rides for user 1
+2025-12-09 01:18:09 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 01:18:09 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 01:18:09 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 01:18:09 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 01:18:09 [info]: 📋 Fetching rides for user 1
+2025-12-09 01:18:09 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 01:18:09 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 01:18:09 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 01:18:09 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 01:18:27 [info]: ✅ User logged in: pablo@ceu.es
+2025-12-09 01:18:30 [info]: 📋 Fetching rides for user 2
+2025-12-09 01:18:30 [info]: 📋 User 2 retrieved 0 own rides
+2025-12-09 01:18:30 [info]: 📋 User 2 retrieved 1 bookings
+2025-12-09 01:18:30 [info]: 📋 User 2 retrieved 1 history items
+2025-12-09 01:18:30 [info]: 📋 Fetching rides for user 2
+2025-12-09 01:18:30 [info]: 📋 User 2 retrieved 1 history items
+2025-12-09 01:18:30 [info]: 📋 Found 0 pending bookings for driver 2
+2025-12-09 01:18:30 [info]: 📋 User 2 retrieved 0 own rides
+2025-12-09 01:18:30 [info]: 📋 User 2 retrieved 1 bookings
+2025-12-09 01:18:30 [info]: 📋 Found 0 pending bookings for driver 2
+2025-12-09 01:19:24 [info]: ✅ WebSocket handlers configured
+2025-12-09 01:19:24 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 01:19:24 [info]: ✅ Database connection established successfully
+2025-12-09 01:19:24 [info]: ======================================================================
+2025-12-09 01:19:24 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 01:19:24 [info]: ======================================================================
+2025-12-09 01:19:24 [info]: 📧 Email Configuration:
+2025-12-09 01:19:24 [info]:    Backend: mailhog
+2025-12-09 01:19:24 [info]:    Provider: MailHog
+2025-12-09 01:19:24 [info]:    From: noreply@unigo.app
+2025-12-09 01:19:24 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 01:19:24 [info]: ======================================================================
+2025-12-09 01:19:24 [info]: 💳 Stripe Configuration:
+2025-12-09 01:19:24 [info]:    Enabled: true
+2025-12-09 01:19:24 [info]:    Commission: 15%
+2025-12-09 01:19:24 [info]: ======================================================================
+2025-12-09 01:19:24 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 01:19:24 [info]: ✅ Environment: development
+2025-12-09 01:19:24 [info]: ✅ WebSocket server ready
+2025-12-09 01:19:24 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 01:19:24 [info]: ======================================================================
+2025-12-09 01:19:30 [info]: 📋 Fetching rides for user 2
+2025-12-09 01:19:30 [info]: 📋 User 2 retrieved 0 own rides
+2025-12-09 01:19:30 [info]: 📋 User 2 retrieved 1 bookings
+2025-12-09 01:19:30 [info]: 📋 User 2 retrieved 1 history items
+2025-12-09 01:19:50 [info]: ✅ WebSocket handlers configured
+2025-12-09 01:19:50 [info]: ✅ Avatar directory exists: /home/pablodlx/UniGOsw/src/backend/data/avatars
+2025-12-09 01:19:50 [info]: ✅ Database connection established successfully
+2025-12-09 01:19:50 [info]: ======================================================================
+2025-12-09 01:19:50 [info]: 🚀 Starting UniGO Backend (Node.js/Express)
+2025-12-09 01:19:50 [info]: ======================================================================
+2025-12-09 01:19:50 [info]: 📧 Email Configuration:
+2025-12-09 01:19:50 [info]:    Backend: mailhog
+2025-12-09 01:19:50 [info]:    Provider: MailHog
+2025-12-09 01:19:50 [info]:    From: noreply@unigo.app
+2025-12-09 01:19:50 [info]:    SMTP Host: 127.0.0.1:1025
+2025-12-09 01:19:50 [info]: ======================================================================
+2025-12-09 01:19:50 [info]: 💳 Stripe Configuration:
+2025-12-09 01:19:50 [info]:    Enabled: true
+2025-12-09 01:19:50 [info]:    Commission: 15%
+2025-12-09 01:19:50 [info]: ======================================================================
+2025-12-09 01:19:50 [info]: ✅ Server running on http://0.0.0.0:8000
+2025-12-09 01:19:50 [info]: ✅ Environment: development
+2025-12-09 01:19:50 [info]: ✅ WebSocket server ready
+2025-12-09 01:19:50 [info]: ✅ Swagger docs: http://127.0.0.1:8000/api-docs
+2025-12-09 01:19:50 [info]: ======================================================================
+2025-12-09 01:19:55 [info]: 📋 Fetching rides for user 2
+2025-12-09 01:19:55 [info]: 📋 User 2 retrieved 0 own rides
+2025-12-09 01:19:55 [info]: 📋 User 2 retrieved 1 bookings
+2025-12-09 01:19:55 [info]: 📋 User 2 retrieved 1 history items
+2025-12-09 01:19:55 [info]: 📋 Fetching rides for user 2
+2025-12-09 01:19:55 [info]: 📋 Found 0 pending bookings for driver 2
+2025-12-09 01:19:55 [info]: 📋 Found 0 pending bookings for driver 2
+2025-12-09 01:19:55 [info]: 📋 User 2 retrieved 0 own rides
+2025-12-09 01:19:55 [info]: 📋 User 2 retrieved 1 history items
+2025-12-09 01:19:55 [info]: 📋 User 2 retrieved 1 bookings
+2025-12-09 01:20:55 [info]: 📋 Fetching rides for user 2
+2025-12-09 01:20:55 [info]: 📋 User 2 retrieved 0 own rides
+2025-12-09 01:20:55 [info]: 📋 User 2 retrieved 1 bookings
+2025-12-09 01:20:55 [info]: 📋 User 2 retrieved 1 history items
+2025-12-09 01:21:27 [info]: 📋 Fetching rides for user 2
+2025-12-09 01:21:27 [info]: 📋 User 2 retrieved 0 own rides
+2025-12-09 01:21:27 [info]: 📋 User 2 retrieved 1 bookings
+2025-12-09 01:21:27 [info]: 📋 Fetching rides for user 2
+2025-12-09 01:21:27 [info]: 📋 User 2 retrieved 1 history items
+2025-12-09 01:21:27 [info]: 📋 Found 0 pending bookings for driver 2
+2025-12-09 01:21:27 [info]: 📋 User 2 retrieved 0 own rides
+2025-12-09 01:21:27 [info]: 📋 User 2 retrieved 1 history items
+2025-12-09 01:21:27 [info]: 📋 User 2 retrieved 1 bookings
+2025-12-09 01:21:27 [info]: 📋 Found 0 pending bookings for driver 2
+2025-12-09 01:22:25 [info]: 📋 Fetching rides for user 2
+2025-12-09 01:22:25 [info]: 📋 Fetching rides for user 2
+2025-12-09 01:22:25 [info]: 📋 User 2 retrieved 0 own rides
+2025-12-09 01:22:25 [info]: 📋 User 2 retrieved 1 bookings
+2025-12-09 01:22:25 [info]: 📋 User 2 retrieved 0 own rides
+2025-12-09 01:22:25 [info]: 📋 Found 0 pending bookings for driver 2
+2025-12-09 01:22:25 [info]: 📋 User 2 retrieved 1 bookings
+2025-12-09 01:22:25 [info]: 📋 User 2 retrieved 1 history items
+2025-12-09 01:22:25 [info]: 📋 User 2 retrieved 1 history items
+2025-12-09 01:22:25 [info]: 📋 Found 0 pending bookings for driver 2
+2025-12-09 01:22:46 [info]: ✅ User logged in: pablo.decruzrodriguez@usp.ceu.es
+2025-12-09 01:22:47 [info]: 📋 Fetching rides for user 1
+2025-12-09 01:22:47 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 01:22:47 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 01:22:47 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 01:22:47 [info]: 📋 Fetching rides for user 1
+2025-12-09 01:22:47 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 01:22:47 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 01:22:47 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 01:22:47 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 01:22:47 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 01:23:34 [info]: ✅ User logged in: pablo@ceu.es
+2025-12-09 01:23:52 [info]: 📋 Fetching rides for user 2
+2025-12-09 01:23:52 [info]: 📋 Fetching rides for user 2
+2025-12-09 01:23:52 [info]: 📋 User 2 retrieved 0 own rides
+2025-12-09 01:23:52 [info]: 📋 User 2 retrieved 1 bookings
+2025-12-09 01:23:52 [info]: 📋 User 2 retrieved 0 own rides
+2025-12-09 01:23:52 [info]: 📋 User 2 retrieved 1 history items
+2025-12-09 01:23:52 [info]: 📋 Found 0 pending bookings for driver 2
+2025-12-09 01:23:52 [info]: 📋 User 2 retrieved 1 bookings
+2025-12-09 01:23:52 [info]: 📋 Found 0 pending bookings for driver 2
+2025-12-09 01:23:52 [info]: 📋 User 2 retrieved 1 history items
+2025-12-09 01:24:52 [info]: 📋 Fetching rides for user 2
+2025-12-09 01:24:52 [info]: 📋 User 2 retrieved 0 own rides
+2025-12-09 01:24:52 [info]: 📋 User 2 retrieved 1 history items
+2025-12-09 01:24:52 [info]: 📋 User 2 retrieved 1 bookings
+2025-12-09 01:25:52 [info]: 📋 Fetching rides for user 2
+2025-12-09 01:25:52 [info]: 📋 User 2 retrieved 0 own rides
+2025-12-09 01:25:52 [info]: 📋 User 2 retrieved 1 history items
+2025-12-09 01:25:52 [info]: 📋 User 2 retrieved 1 bookings
+2025-12-09 01:26:52 [info]: 📋 Fetching rides for user 2
+2025-12-09 01:26:52 [info]: 📋 User 2 retrieved 0 own rides
+2025-12-09 01:26:52 [info]: 📋 User 2 retrieved 1 bookings
+2025-12-09 01:26:52 [info]: 📋 User 2 retrieved 1 history items
+2025-12-09 01:27:52 [info]: 📋 Fetching rides for user 2
+2025-12-09 01:27:52 [info]: 📋 User 2 retrieved 0 own rides
+2025-12-09 01:27:52 [info]: 📋 User 2 retrieved 1 bookings
+2025-12-09 01:27:52 [info]: 📋 User 2 retrieved 1 history items
+2025-12-09 01:28:40 [info]: ✅ User logged in: pablo.decruzrodriguez@usp.ceu.es
+2025-12-09 01:28:42 [info]: 📋 Fetching rides for user 1
+2025-12-09 01:28:42 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 01:28:42 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 01:28:42 [info]: 📋 Fetching rides for user 1
+2025-12-09 01:28:42 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 01:28:42 [info]: 📋 User 1 retrieved 1 own rides
+2025-12-09 01:28:42 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 01:28:42 [info]: 📋 User 1 retrieved 0 bookings
+2025-12-09 01:28:42 [info]: 📋 Found 0 pending bookings for driver 1
+2025-12-09 01:28:42 [info]: 📋 User 1 retrieved 0 history items
+2025-12-09 01:28:47 [info]: SIGINT received, shutting down gracefully...

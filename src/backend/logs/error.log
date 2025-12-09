@@ -8134,3 +8134,925 @@ TypeError: Cannot read properties of undefined (reading 'departure_city')
     at EmailService.sendBookingConfirmation (file:///home/pablodlx/UniGOsw/src/backend/src/utils/email.js:111:54)
     at file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:274:26
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-12-08 23:45:53 [error]: Error: column "hashed_password" does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/auth.js:266:23
+2025-12-08 23:47:19 [error]: Error: column "avatar_url" does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/auth.js:266:23
+2025-12-08 23:51:16 [error]: Error: column "email" of relation "email_codes" does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.insert (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:2490:35)
+    at async EmailCode.create (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1362:12)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/auth.js:77:29
+2025-12-08 23:53:02 [error]: Error: column Rating.rated_id does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Rating.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/ratings.js:18:21
+2025-12-08 23:53:03 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:53:08 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:53:13 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:53:18 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:53:23 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:53:28 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:53:33 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:56:09 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:56:14 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:56:19 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:56:21 [error]: Failed to get my rides: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:402:19
+2025-12-08 23:56:21 [error]: Error: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:402:19
+2025-12-08 23:56:21 [error]: Failed to get my bookings: column Booking.seats does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-08 23:56:21 [error]: Error: column Booking.seats does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-08 23:56:21 [error]: Failed to get my rides: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:402:19
+2025-12-08 23:56:21 [error]: Error: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:402:19
+2025-12-08 23:56:21 [error]: Failed to get ride history: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:511:22
+2025-12-08 23:56:21 [error]: Error: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:511:22
+2025-12-08 23:56:21 [error]: Error: column Ride.is_completed does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:505:19
+2025-12-08 23:56:21 [error]: Error: column Ride.is_completed does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:505:19
+2025-12-08 23:56:21 [error]: Failed to get my bookings: column Booking.seats does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-08 23:56:21 [error]: Error: column Booking.seats does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-08 23:56:21 [error]: Failed to get ride history: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:511:22
+2025-12-08 23:56:21 [error]: Error: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:511:22
+2025-12-08 23:56:24 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:56:29 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:56:34 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:56:39 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:56:44 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:56:49 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:56:54 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:56:59 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:04 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:09 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:14 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:19 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:21 [error]: Failed to get my rides: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:402:19
+2025-12-08 23:57:21 [error]: Error: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:402:19
+2025-12-08 23:57:21 [error]: Failed to get ride history: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:511:22
+2025-12-08 23:57:21 [error]: Error: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:511:22
+2025-12-08 23:57:21 [error]: Failed to get my bookings: column Booking.seats does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-08 23:57:21 [error]: Error: column Booking.seats does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-08 23:57:24 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:29 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:34 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:39 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:44 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:49 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:54 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:57:59 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:58:04 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:58:09 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:58:13 [error]: ❌ Search failed: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:268:26
+2025-12-08 23:58:14 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:58:16 [error]: ❌ Search failed: column Ride.origin_latitude does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Ride.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:268:26
+2025-12-08 23:58:19 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:58:24 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:59:09 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:59:14 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:59:19 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:59:24 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:59:24 [error]: Failed to get my bookings: invalid input value for enum enum_bookings_status: "REJECTED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-08 23:59:24 [error]: Error: invalid input value for enum enum_bookings_status: "REJECTED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-08 23:59:24 [error]: Failed to get ride history: invalid input value for enum enum_bookings_status: "COMPLETED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:530:25
+2025-12-08 23:59:24 [error]: Error: invalid input value for enum enum_bookings_status: "COMPLETED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:530:25
+2025-12-08 23:59:24 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:517:22
+2025-12-08 23:59:24 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:517:22
+2025-12-08 23:59:24 [error]: Failed to get my bookings: invalid input value for enum enum_bookings_status: "REJECTED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-08 23:59:24 [error]: Error: invalid input value for enum enum_bookings_status: "REJECTED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-08 23:59:24 [error]: Failed to get ride history: invalid input value for enum enum_bookings_status: "COMPLETED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:530:25
+2025-12-08 23:59:24 [error]: Error: invalid input value for enum enum_bookings_status: "COMPLETED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:530:25
+2025-12-08 23:59:29 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:59:34 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:59:39 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:59:44 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:59:49 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:59:54 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-08 23:59:59 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-09 00:00:04 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-09 00:00:09 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-09 00:00:14 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-09 00:00:19 [error]: Error: invalid input value for enum enum_bookings_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.rawSelect (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:434:18)
+    at async Booking.aggregate (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1277:19)
+    at async Booking.count (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1306:20)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:482:26
+2025-12-09 00:02:19 [error]: Failed to get ride history: invalid input value for enum enum_bookings_status: "COMPLETED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:530:25
+2025-12-09 00:02:19 [error]: Error: invalid input value for enum enum_bookings_status: "COMPLETED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:530:25
+2025-12-09 00:02:19 [error]: Failed to get my bookings: invalid input value for enum enum_bookings_status: "REJECTED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-09 00:02:19 [error]: Error: invalid input value for enum enum_bookings_status: "REJECTED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-09 00:02:19 [error]: Failed to get ride history: invalid input value for enum enum_bookings_status: "COMPLETED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:530:25
+2025-12-09 00:02:19 [error]: Error: invalid input value for enum enum_bookings_status: "COMPLETED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:530:25
+2025-12-09 00:02:19 [error]: Failed to get my bookings: invalid input value for enum enum_bookings_status: "REJECTED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-09 00:02:19 [error]: Error: invalid input value for enum enum_bookings_status: "REJECTED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-09 00:03:19 [error]: Failed to get my bookings: invalid input value for enum enum_bookings_status: "REJECTED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-09 00:03:19 [error]: Error: invalid input value for enum enum_bookings_status: "REJECTED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:451:22
+2025-12-09 00:03:19 [error]: Failed to get ride history: invalid input value for enum enum_bookings_status: "COMPLETED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:530:25
+2025-12-09 00:03:19 [error]: Error: invalid input value for enum enum_bookings_status: "COMPLETED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.select (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Booking.findAll (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:1140:21)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:530:25
+2025-12-09 00:10:29 [error]: Failed to authorize payment: column "user_id" of relation "payments" does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:1157:11
+2025-12-09 00:10:29 [error]: Error details:
+2025-12-09 00:13:00 [error]: Failed to authorize payment: column "user_id" of relation "payments" does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:1157:11
+2025-12-09 00:13:00 [error]: Error details:
+2025-12-09 00:18:30 [error]: Failed to authorize payment: column "user_id" of relation "payments" does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:1157:11
+2025-12-09 00:18:30 [error]: Error details: column "user_id" of relation "payments" does not exist
+2025-12-09 00:20:51 [error]: Failed to authorize payment: column "user_id" of relation "payments" does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:1157:11
+2025-12-09 00:20:51 [error]: Error details: column "user_id" of relation "payments" does not exist
+2025-12-09 00:22:20 [error]: Failed to authorize payment: column "user_id" of relation "payments" does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:1157:11
+2025-12-09 00:22:20 [error]: Error details: column "user_id" of relation "payments" does not exist
+2025-12-09 00:25:46 [error]: Failed to authorize payment: column "user_id" of relation "payments" does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:1157:11
+2025-12-09 00:25:46 [error]: Error details: column "user_id" of relation "payments" does not exist
+2025-12-09 00:32:55 [error]: Failed to authorize payment: column "user_id" of relation "payments" does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:1157:11
+2025-12-09 00:32:55 [error]: Error details: column "user_id" of relation "payments" does not exist
+2025-12-09 00:38:02 [error]: Error: invalid input value for enum enum_payments_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:167:23
+2025-12-09 00:38:17 [error]: Error: invalid input value for enum enum_payments_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:167:23
+2025-12-09 00:48:03 [error]: Error: invalid input value for enum enum_payments_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:167:23
+2025-12-09 00:52:00 [error]: Failed to create/capture payment: column "user_id" of relation "payments" does not exist
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:225:9
+2025-12-09 00:54:24 [error]: Failed to create/capture payment: Assignment to constant variable.
+TypeError: Assignment to constant variable.
+    at file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:250:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-12-09 00:55:27 [error]: Failed to create/capture payment: invalid input value for enum enum_bookings_status: "ACCEPTED"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PostgresQueryInterface.update (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/abstract/query-interface.js:355:12)
+    at async model.save (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:2490:35)
+    at async model.update (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/model.js:2598:12)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:253:9
+2025-12-09 00:58:23 [error]: Failed to send confirmation email: Cannot read properties of undefined (reading 'departure_city')
+TypeError: Cannot read properties of undefined (reading 'departure_city')
+    at EmailService.sendBookingConfirmation (file:///home/pablodlx/UniGOsw/src/backend/src/utils/email.js:111:54)
+    at file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:275:26
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
