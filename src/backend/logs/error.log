@@ -9056,3 +9056,14 @@ TypeError: Cannot read properties of undefined (reading 'departure_city')
     at EmailService.sendBookingConfirmation (file:///home/pablodlx/UniGOsw/src/backend/src/utils/email.js:111:54)
     at file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:275:26
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-12-09 10:42:29 [error]: Failed to send confirmation email: Cannot read properties of undefined (reading 'departure_city')
+TypeError: Cannot read properties of undefined (reading 'departure_city')
+    at EmailService.sendBookingConfirmation (file:///home/pablodlx/UniGOsw/src/backend/src/utils/email.js:111:54)
+    at file:///home/pablodlx/UniGOsw/src/backend/src/routes/bookings.js:275:26
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-12-09 10:49:34 [error]: ❌ Failed to capture payment for booking 10: invalid input value for enum enum_payments_status: "PENDING"
+Error
+    at Query.run (/home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /home/pablodlx/UniGOsw/src/backend/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///home/pablodlx/UniGOsw/src/backend/src/routes/rides.js:958:27
